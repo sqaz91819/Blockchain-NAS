@@ -16,7 +16,7 @@ if __name__ == "__main__":
                     uint min = 0;
                     uint max = 8249;
                     uint counter = 0;
-                    uint[6250] acc;
+                    uint[8250] acc;
 
                     event parameter_log(uint counter);
 
