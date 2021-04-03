@@ -53,6 +53,7 @@ if __name__ == "__main__":
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
 
     start_t = time()
+    training_t = 0
     n_tasks = 0
 
     with open('LR_SINC.txt', 'r') as f:
@@ -92,9 +93,11 @@ if __name__ == "__main__":
         print('Width         : ', width)
         print("----------------------------------------------------------")
         
+        s = time()
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
         acc = trainer.train()
+        training_t += time() - s
 
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
@@ -127,9 +130,11 @@ if __name__ == "__main__":
         print('Width         : ', width)
         print("----------------------------------------------------------")
 
+        s = time()
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
         acc = trainer.train()
+        training_t += time() - s
 
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
@@ -145,6 +150,7 @@ if __name__ == "__main__":
     with open('logging.txt', 'w') as f:
         f.write(str(total_t) + '\n')
         f.write(str(n_tasks) + '\n')
+        f.write(str(training_t) + '\n')
 
     print("Total computation time : ", total_t)
     print("Processed tasks        : ", n_tasks)
