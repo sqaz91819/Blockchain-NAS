@@ -98,6 +98,7 @@ if __name__ == "__main__":
         acc = trainer.train()
 
         # send transaction for set the accuracy to smart contract in block chain
+        w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
@@ -133,6 +134,7 @@ if __name__ == "__main__":
         acc = trainer.train()
 
         # send transaction for set the accuracy to smart contract in block chain
+        w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
