@@ -66,8 +66,7 @@ if __name__ == "__main__":
     print('Contract Address : ', addr)
     hp = w3.eth.contract(address=addr, abi=abi)
 
-    end_of_task = hp.functions.end_of_contract().call()
-    while not end_of_task:
+    while not hp.functions.end_of_contract().call():
         print("Task has not been completed!")
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.get_parameters().transact()
@@ -105,7 +104,6 @@ if __name__ == "__main__":
         print("----------------------------------------------------------")
         print("Upload acc " + str(acc) + " to smart contract, success!")
         print("----------------------------------------------------------")
-        end_of_task = hp.functions.end_of_contract().call()
 
     print("Task completed!")
 

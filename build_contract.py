@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
                     function get_parameters() public {
                         emit parameter_log(counter);
-                        if (counter <= max) {
+                        if (counter < max) {
                             counter = counter + 1;
                         }
                     }
