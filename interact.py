@@ -120,7 +120,7 @@ if __name__ == "__main__":
     # reprocess the timeout tx
     for tx in timeout_tx:
         try:
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=100)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx, timeout=100)
         except web3.exceptions.TimeExhausted:
             print('Transaction failed and can not repair.')
             continue
