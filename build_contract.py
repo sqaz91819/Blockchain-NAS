@@ -14,9 +14,9 @@ if __name__ == "__main__":
                     contract HyperParameter_LR {
 
                     uint min = 0;
-                    uint max = 8249;
+                    uint max = 999;
                     uint counter = 0;
-                    uint[8250] acc;
+                    uint[1000] acc;
 
                     event parameter_log(uint counter);
 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
                     }
 
                     function end_of_contract() view public returns (bool){
-                        return counter > max;
+                        return counter >= max;
                     }
                     // fucking idiot
                     function get_acc(uint index) view public returns(uint) {

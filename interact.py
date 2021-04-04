@@ -102,6 +102,12 @@ if __name__ == "__main__":
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
+        try:
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=240)
+        except web3.exceptions.TimeExhausted:
+            print("Timeout occur in accuracy...")
+            pass
+
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
         print("----------------------------------------------------------")
@@ -139,6 +145,11 @@ if __name__ == "__main__":
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
+        try:
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=80)
+        except web3.exceptions.TimeExhausted:
+            print("Timeout occur in accuracy...")
+            pass
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
         print("----------------------------------------------------------")
