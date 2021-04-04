@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # self node
-node1/
+node1/geth/
+node1/geth.ipc
 logging.txt
