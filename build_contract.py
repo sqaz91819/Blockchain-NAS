@@ -56,7 +56,7 @@ if __name__ == "__main__":
             }
     })
 
-    w3 = Web3(Web3.IPCProvider('./node1/geth.ipc'))
+    w3 = Web3(Web3.IPCProvider('./tzuchieh_node1/geth.ipc'))
     w3.eth.default_account = w3.eth.accounts[0]
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
 

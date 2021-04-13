@@ -6,7 +6,7 @@ from trainer import Trainer
 from time import time
 
 if __name__ == "__main__":
-    w3 = Web3(Web3.IPCProvider('./node1/geth.ipc'))
+    w3 = Web3(Web3.IPCProvider('./tzuchieh_node1/geth.ipc'))
     w3.eth.default_account = w3.eth.accounts[0]
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
 
@@ -38,6 +38,7 @@ if __name__ == "__main__":
         # print(tx_receipt)
         n_tasks += 1
 
+        print(tx_receipt['logs'])
         log_to_process = tx_receipt['logs'][0]
         processed_log = hp.events.Particle().processLog(log_to_process)
 

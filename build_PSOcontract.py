@@ -4,302 +4,306 @@ from web3 import Web3
 from solc import compile_standard
 
 if __name__ == "__main__":
-    compiled_sol = compile_standard({
-        "language": "Solidity",
-        "sources": {
-            "PSO.sol": {
-                "content":'''
-                    pragma solidity >= 0.4.18 ;
-                    contract PSO_1 {
+    # compiled_sol = compile_standard({
+    #     "language": "Solidity",
+    #     "sources": {
+    #         "PSO.sol": {
+    #             "content":'''
+    #                 pragma solidity >= 0.5.2;
+    #                 contract PSO_1 {
 
-                        event Particle(int LR,int Epoch,int batch,int Layer,int Width,uint counter);
-                        int public ALL_Best_LR ;
-                        int public ALL_Best_Epoch ;
-                        int public ALL_Best_Batch ;
-                        int public ALL_Best_Layer ;
-                        int public ALL_Best_Width ;
-                        int public ALL_Best_Accuracy ;
+    #                     event Particle(int LR,int Epoch,int batch,int Layer,int Width,uint counter);
+    #                     int public ALL_Best_LR ;
+    #                     int public ALL_Best_Epoch ;
+    #                     int public ALL_Best_Batch ;
+    #                     int public ALL_Best_Layer ;
+    #                     int public ALL_Best_Width ;
+    #                     int public ALL_Best_Accuracy ;
 
-                        int[] private P_Best_LR =  new int[](10) ;
-                        int[] private P_Best_Epoch = new int[](10);
-                        int[] private P_Best_Batch = new int[](10);
-                        int[] private P_Best_Layer = new int[](10);
-                        int[] private P_Best_Width = new int[](10);
-                        int[] private P_Best_Accuracy = new int[](10);
+    #                     int[] private P_Best_LR =  new int[](10) ;
+    #                     int[] private P_Best_Epoch = new int[](10);
+    #                     int[] private P_Best_Batch = new int[](10);
+    #                     int[] private P_Best_Layer = new int[](10);
+    #                     int[] private P_Best_Width = new int[](10);
+    #                     int[] private P_Best_Accuracy = new int[](10);
 
-                        int[] private LR = new int[](10);
-                        int[] private Epoch = new int[](10);
-                        int[] private Batch = new int[](10);
-                        int[] private Layer = new int[](10);
-                        int[] private Width = new int[](10);
-                        int[] private Accuracy = new int[](10);
+    #                     int[] private LR = new int[](10);
+    #                     int[] private Epoch = new int[](10);
+    #                     int[] private Batch = new int[](10);
+    #                     int[] private Layer = new int[](10);
+    #                     int[] private Width = new int[](10);
+    #                     int[] private Accuracy = new int[](10);
                         
-                        int[] private LR_v = new int[](10);
-                        int[] private Epoch_v = new int[](10);
-                        int[] private Batch_v = new int[](10);
-                        int[] private Layer_v = new int[](10);
-                        int[] private Width_v = new int[](10);
-                        int[] private Accuracy_v = new int[](10);
+    #                     int[] private LR_v = new int[](10);
+    #                     int[] private Epoch_v = new int[](10);
+    #                     int[] private Batch_v = new int[](10);
+    #                     int[] private Layer_v = new int[](10);
+    #                     int[] private Width_v = new int[](10);
+    #                     int[] private Accuracy_v = new int[](10);
 
-                        int[] private CHECK =  new int[](10) ;
-                        int constant LR_max = 10000;
-                        int constant LR_min = 1000;
-                        int constant Epoch_max = 100;
-                        int constant Epoch_min = 50;
-                        int constant Batch_max = 60;
-                        int constant Batch_min = 20;
-                        int constant Layer_max = 50;
-                        int constant Layer_min = 10;
-                        int constant Width_max = 60;
-                        int constant Width_min = 30;
+    #                     int[] private CHECK =  new int[](10) ;
+    #                     int constant LR_max = 10000;
+    #                     int constant LR_min = 1000;
+    #                     int constant Epoch_max = 100;
+    #                     int constant Epoch_min = 50;
+    #                     int constant Batch_max = 60;
+    #                     int constant Batch_min = 20;
+    #                     int constant Layer_max = 50;
+    #                     int constant Layer_min = 10;
+    #                     int constant Width_max = 60;
+    #                     int constant Width_min = 30;
 
-                        uint public ITER = 0;
-                        uint public counter  = 0; 
-
-
-                        function set_accuracy(int acc,uint ind) public {
-                            Accuracy[ind] = acc ;
-                            CHECK[ind] = 1;
-                        }
+    #                     uint public ITER = 0;
+    #                     uint public counter  = 0; 
 
 
-                        function get()  public returns(int,int,int,int,int,uint){
-                            if(ITER == 0)
-                            {
-                                RANDOM_INI();
-                                ITER++;
-                            }    
-                            else if(ITER < 100)
-                            {
+    #                     function set_accuracy(int acc,uint ind) public {
+    #                         Accuracy[ind] = acc ;
+    #                         CHECK[ind] = 1;
+    #                     }
+
+    #                      function end_of_contract() view public returns (bool){
+    #                         return ITER >= 100 ;
+    #                     }
+
+    #                     function get()  public returns(int,int,int,int,int,uint){
+    #                         if(ITER == 0)
+    #                         {
+    #                             RANDOM_INI();
+    #                             ITER++;
+    #                         }    
+    #                         else if(ITER < 100)
+    #                         {
                                 
-                                if(counter == 10 )
-                                {
-                                    int  sum = 0;
-                                    for(uint i = 0;i<10;i++)
-                                    {
-                                        sum += CHECK[i];
-                                    }
+    #                             if(counter == 10 )
+    #                             {
+    #                                 int  sum = 0;
+    #                                 for(uint i = 0;i<10;i++)
+    #                                 {
+    #                                     sum += CHECK[i];
+    #                                 }
 
-                                    if(sum == 10)
-                                    {
-                                        Evaluate();
-                                        Update_Velocity();
-                                        Update_Position();
-                                        counter = 0;
-                                        ITER++;
+    #                                 if(sum == 10)
+    #                                 {
+    #                                     Evaluate();
+    #                                     Update_Velocity();
+    #                                     Update_Position();
+    #                                     counter = 0;
+    #                                     ITER++;
 
-                                        for(uint i = 0;i<10;i++)
-                                        {
-                                            CHECK[i] = 0;
-                                        }
-                                    }
+    #                                     for(uint i = 0;i<10;i++)
+    #                                     {
+    #                                         CHECK[i] = 0;
+    #                                     }
+    #                                 }
                             
-                                }
-                                else{
-                                    emit Particle(LR[counter-1],Epoch[counter-1],Batch[counter-1],Layer[counter-1],Width[counter-1],counter-1);
-                                    counter ++;
-                                }
+    #                             }
+    #                             else{
+    #                                 emit Particle(LR[counter-1],Epoch[counter-1],Batch[counter-1],Layer[counter-1],Width[counter-1],counter-1);
+    #                                 counter ++;
+    #                             }
 
-                            }
+    #                         }
                             
 
                         
-                    }
-                        function RANDOM_INI() public{
-                            for(uint i = 0 ; i < 10 ; i++)
-                            {
-                                //random x 
-                                CHECK[i] = -1;
+    #                 }
+    #                     function RANDOM_INI() public{
+    #                         for(uint i = 0 ; i < 10 ; i++)
+    #                         {
+    #                             //random x 
+    #                             CHECK[i] = -1;
 
-                                LR[i] = int(int(keccak256(block.timestamp, block.difficulty))%9000)+1000;
+    #                             LR[i] = int(int(keccak256(block.timestamp, block.difficulty))%9000)+1000;
 
-                                Epoch[i] = int(int(keccak256(block.timestamp, block.difficulty))%50)+50;
+    #                             Epoch[i] = int(int(keccak256(block.timestamp, block.difficulty))%50)+50;
 
-                                Batch[i] = int(int(keccak256(block.timestamp, block.difficulty))%40)+20;
+    #                             Batch[i] = int(int(keccak256(block.timestamp, block.difficulty))%40)+20;
 
-                                Layer[i] = int(int(keccak256( block.timestamp , block.difficulty))%40)+10;
+    #                             Layer[i] = int(int(keccak256( block.timestamp , block.difficulty))%40)+10;
 
-                                Width[i] = int(int(keccak256(block.timestamp, block.difficulty)) % 30) + 30;
+    #                             Width[i] = int(int(keccak256(block.timestamp, block.difficulty)) % 30) + 30;
 
 
 
-                                //random vector
-                                LR_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%1998)-999;
+    #                             //random vector
+    #                             LR_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%1998)-999;
 
-                                Epoch_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%10)-5;
+    #                             Epoch_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%10)-5;
 
-                                Batch_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%8)-4;
+    #                             Batch_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%8)-4;
 
-                                Layer_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%8)-4;
+    #                             Layer_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%8)-4;
 
-                                Width_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%6)-3;
-                            }
+    #                             Width_v[i] = int(int(keccak256(block.timestamp, block.difficulty))%6)-3;
+    #                         }
                             
-                        }
-                        function Update_Velocity() public
-                        {
-                            for(uint i = 0;i < 10;i++)
-                            {
-                                int[5] memory w;
-                                int[5] memory c1;
-                                int[5] memory c2;
-                                for(uint j = 0;j < 5;j++)
-                                {
-                                    if( j==0 )
-                                    {
-                                        w[j]= 8000;
-                                        c1[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
-                                        c2[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
+    #                     }
+    #                     function Update_Velocity() public
+    #                     {
+    #                         for(uint i = 0;i < 10;i++)
+    #                         {
+    #                             int[5] memory w;
+    #                             int[5] memory c1;
+    #                             int[5] memory c2;
+    #                             for(uint j = 0;j < 5;j++)
+    #                             {
+    #                                 if( j==0 )
+    #                                 {
+    #                                     w[j]= 8000;
+    #                                     c1[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
+    #                                     c2[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
 
 
-                                    }
-                                    else{
-                                        w[j] = 80;
-                                        c1[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
-                                        c2[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
-                                    }
-                                }
+    #                                 }
+    #                                 else{
+    #                                     w[j] = 80;
+    #                                     c1[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
+    #                                     c2[j] = int(int(keccak256(block.timestamp, block.difficulty))%4);
+    #                                 }
+    #                             }
 
-                                LR_v[i] = LR_v[i] * w[0] + c1[0] * (P_Best_LR[i] - LR_v[i] ) + c2[0] * (ALL_Best_LR - LR_v[i]);
-                                Epoch_v[i] = Epoch_v[i]*w[1] + c1[1] * (P_Best_LR[i] - Epoch_v[i]) + c2[1] * (ALL_Best_Epoch - Epoch_v[i]);
-                                Batch_v[i] = Batch_v[i]*w[2] + c1[2] * (P_Best_Batch[i] - Batch_v[i]) + c2[2] * (ALL_Best_Batch - Batch_v[i]);
-                                Layer_v[i] = Layer_v[i]*w[3] + c1[3]*(P_Best_Layer[i] - Layer_v[i]) + c2[3]*(ALL_Best_Layer - Layer_v[i]);
-                                Width_v[i] = Width_v[i]*w[4] + c1[4]*(P_Best_Width[i] - Width_v[i]) + c2[4]*(ALL_Best_Width - Width_v[i]);
-                            }
+    #                             LR_v[i] = LR_v[i] * w[0] + c1[0] * (P_Best_LR[i] - LR_v[i] ) + c2[0] * (ALL_Best_LR - LR_v[i]);
+    #                             Epoch_v[i] = Epoch_v[i]*w[1] + c1[1] * (P_Best_LR[i] - Epoch_v[i]) + c2[1] * (ALL_Best_Epoch - Epoch_v[i]);
+    #                             Batch_v[i] = Batch_v[i]*w[2] + c1[2] * (P_Best_Batch[i] - Batch_v[i]) + c2[2] * (ALL_Best_Batch - Batch_v[i]);
+    #                             Layer_v[i] = Layer_v[i]*w[3] + c1[3]*(P_Best_Layer[i] - Layer_v[i]) + c2[3]*(ALL_Best_Layer - Layer_v[i]);
+    #                             Width_v[i] = Width_v[i]*w[4] + c1[4]*(P_Best_Width[i] - Width_v[i]) + c2[4]*(ALL_Best_Width - Width_v[i]);
+    #                         }
 
-                            // Test_random =  mulDiv (uint x, uint y, uint z)
+    #                         // Test_random =  mulDiv (uint x, uint y, uint z)
 
-                        }
-                        function Update_Position() public
-                        {
-                            for(uint i = 0;i < 10;i++)
-                            {
-                                LR[i] = LR[i] + LR_v[i];
-                                Epoch[i] = Epoch[i] + Epoch_v[i]; 
-                                Batch[i] = Batch[i] + Batch_v[i];
-                                Layer[i] = Layer[i] + Layer_v[i];
-                                Width[i] = Width[i] + Width_v[i];
-                            }
-                        }
-                        function Evaluate() public
-                        {
-                            INRANGE();
-                            for(uint i = 0;i < 10;i++)
-                            {
-                                if(Accuracy[i] > P_Best_Accuracy[i])
-                                {
-                                    P_Best_Accuracy[i] = Accuracy[i];
-                                    P_Best_LR[i] = LR[i];
-                                    P_Best_Epoch[i] = Epoch[i];
-                                    P_Best_Batch[i] = Batch[i];
-                                    P_Best_Layer[i] = Layer[i];
-                                    P_Best_Width[i] = Width[i];
-                                    P_Best_Accuracy[i] = Accuracy[i];
+    #                     }
+    #                     function Update_Position() public
+    #                     {
+    #                         for(uint i = 0;i < 10;i++)
+    #                         {
+    #                             LR[i] = LR[i] + LR_v[i];
+    #                             Epoch[i] = Epoch[i] + Epoch_v[i]; 
+    #                             Batch[i] = Batch[i] + Batch_v[i];
+    #                             Layer[i] = Layer[i] + Layer_v[i];
+    #                             Width[i] = Width[i] + Width_v[i];
+    #                         }
+    #                     }
+    #                     function Evaluate() public
+    #                     {
+    #                         INRANGE();
+    #                         for(uint i = 0;i < 10;i++)
+    #                         {
+    #                             if(Accuracy[i] > P_Best_Accuracy[i])
+    #                             {
+    #                                 P_Best_Accuracy[i] = Accuracy[i];
+    #                                 P_Best_LR[i] = LR[i];
+    #                                 P_Best_Epoch[i] = Epoch[i];
+    #                                 P_Best_Batch[i] = Batch[i];
+    #                                 P_Best_Layer[i] = Layer[i];
+    #                                 P_Best_Width[i] = Width[i];
+    #                                 P_Best_Accuracy[i] = Accuracy[i];
 
-                                    if( P_Best_Accuracy[i] > ALL_Best_Accuracy )
-                                    {
-                                        ALL_Best_Accuracy = P_Best_Accuracy[i];
-                                        ALL_Best_LR = P_Best_LR[i];
-                                        ALL_Best_Epoch = P_Best_Epoch[i];
-                                        ALL_Best_Batch = P_Best_Batch[i];
-                                        ALL_Best_Layer = P_Best_Layer[i];
-                                        ALL_Best_Width = P_Best_Width[i];
-                                    }
-                                }
-                            }
-                        }
-                        function INRANGE() private
-                        {
-                            for(uint i = 0;i < 10;i++)
-                            {
-                                if(LR[i] > LR_max )
-                                {
-                                    LR[i] = LR_max;
-                                }
-                                else if( LR[i] < LR_min )
-                                {               
-                                    LR[i] = LR_min;
-                                }
+    #                                 if( P_Best_Accuracy[i] > ALL_Best_Accuracy )
+    #                                 {
+    #                                     ALL_Best_Accuracy = P_Best_Accuracy[i];
+    #                                     ALL_Best_LR = P_Best_LR[i];
+    #                                     ALL_Best_Epoch = P_Best_Epoch[i];
+    #                                     ALL_Best_Batch = P_Best_Batch[i];
+    #                                     ALL_Best_Layer = P_Best_Layer[i];
+    #                                     ALL_Best_Width = P_Best_Width[i];
+    #                                 }
+    #                             }
+    #                         }
+    #                     }
+    #                     function INRANGE() private
+    #                     {
+    #                         for(uint i = 0;i < 10;i++)
+    #                         {
+    #                             if(LR[i] > LR_max )
+    #                             {
+    #                                 LR[i] = LR_max;
+    #                             }
+    #                             else if( LR[i] < LR_min )
+    #                             {               
+    #                                 LR[i] = LR_min;
+    #                             }
                                 
-                                if(Epoch[i] > Epoch_max)
-                                {
-                                    Epoch[i] = Epoch_max;
-                                }
-                                else if (Epoch[i] < Epoch_min)
-                                {
-                                    Epoch[i] = Epoch_min;
-                                }
-                                if(Batch[i] > Batch_max)
-                                {
-                                    Batch[i] = Batch_max;
-                                }
-                                else if(Batch[i] < Batch_min)
-                                {
-                                    Batch[i] = Batch_min;
-                                }
-                                if(Layer[i] > Layer_max)
-                                {
-                                    Layer[i] = Layer_max;
-                                }
-                                else if (Layer[i] < Layer_min)
-                                {
-                                    Layer[i] = Layer_min;
-                                }
-                                if(Width[i] > Width_max)
-                                {
-                                    Width[i] = Width_max;
-                                }
-                                else if(Width[i] < Width_min)
-                                {
-                                    Width[i] = Width_min;
-                                }
+    #                             if(Epoch[i] > Epoch_max)
+    #                             {
+    #                                 Epoch[i] = Epoch_max;
+    #                             }
+    #                             else if (Epoch[i] < Epoch_min)
+    #                             {
+    #                                 Epoch[i] = Epoch_min;
+    #                             }
+    #                             if(Batch[i] > Batch_max)
+    #                             {
+    #                                 Batch[i] = Batch_max;
+    #                             }
+    #                             else if(Batch[i] < Batch_min)
+    #                             {
+    #                                 Batch[i] = Batch_min;
+    #                             }
+    #                             if(Layer[i] > Layer_max)
+    #                             {
+    #                                 Layer[i] = Layer_max;
+    #                             }
+    #                             else if (Layer[i] < Layer_min)
+    #                             {
+    #                                 Layer[i] = Layer_min;
+    #                             }
+    #                             if(Width[i] > Width_max)
+    #                             {
+    #                                 Width[i] = Width_max;
+    #                             }
+    #                             else if(Width[i] < Width_min)
+    #                             {
+    #                                 Width[i] = Width_min;
+    #                             }
 
 
-                            }
+    #                         }
                             
-                        }
+    #                     }
 
 
 
-                        // function mulDiv ()public pure returns (uint)
-                        // {  
+    #                     // function mulDiv ()public pure returns (uint)
+    #                     // {  
                             
-                        //     uint w = 8000;
+    #                     //     uint w = 8000;
                             
-                        //     uint c1 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
+    #                     //     uint c1 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
 
-                        //     uint c2 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
+    #                     //     uint c2 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
 
                             
-                        //     return x * y / z;
+    #                     //     return x * y / z;
                         
-                        // }
+    #                     // }
 
-                    }
-                    '''
-            }
+    #                 }
+    #                 '''
+    #         }
         
-        },
-        "settings":
-            {
-                "outputSelection": {
-                    "*": {
-                        "*": [
-                            "metadata", "evm.bytecode"
-                            , "evm.bytecode.sourceMap"
-                        ]
-                    }
-                }
-            }
-    })
+    #     },
+    #     "settings":
+    #         {
+    #             "outputSelection": {
+    #                 "*": {
+    #                     "*": [
+    #                         "metadata", "evm.bytecode"
+    #                         , "evm.bytecode.sourceMap"
+    #                     ]
+    #                 }
+    #             }
+    #         }
+    # })
 
-    w3 = Web3(Web3.IPCProvider('./node1/geth.ipc'))
+    w3 = Web3(Web3.IPCProvider('./tzuchieh_node1/geth.ipc'))
     w3.eth.default_account = w3.eth.accounts[0]
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
 
     # compile contracy and get the function abi
-    bytecode = compiled_sol['contracts']['PSO.sol']['PSO_1']['evm']['bytecode']['object']
-    abi = json.loads(compiled_sol['contracts']['PSO.sol']['PSO_1']['metadata'])['output']['abi']
+    bytecode = "0x6060604052600a604051805910620000145750595b908082528060200260200182016040525060069080516200003a92916020019062000435565b50600a6040518059106200004b5750595b908082528060200260200182016040525060079080516200007192916020019062000435565b50600a604051805910620000825750595b90808252806020026020018201604052506008908051620000a892916020019062000435565b50600a604051805910620000b95750595b90808252806020026020018201604052506009908051620000df92916020019062000435565b50600a604051805910620000f05750595b9080825280602002602001820160405250600a9080516200011692916020019062000435565b50600a604051805910620001275750595b9080825280602002602001820160405250600b9080516200014d92916020019062000435565b50600a6040518059106200015e5750595b9080825280602002602001820160405250600c9080516200018492916020019062000435565b50600a604051805910620001955750595b9080825280602002602001820160405250600d908051620001bb92916020019062000435565b50600a604051805910620001cc5750595b9080825280602002602001820160405250600e908051620001f292916020019062000435565b50600a604051805910620002035750595b9080825280602002602001820160405250600f9080516200022992916020019062000435565b50600a6040518059106200023a5750595b908082528060200260200182016040525060109080516200026092916020019062000435565b50600a604051805910620002715750595b908082528060200260200182016040525060119080516200029792916020019062000435565b50600a604051805910620002a85750595b90808252806020026020018201604052506012908051620002ce92916020019062000435565b50600a604051805910620002df5750595b908082528060200260200182016040525060139080516200030592916020019062000435565b50600a604051805910620003165750595b908082528060200260200182016040525060149080516200033c92916020019062000435565b50600a6040518059106200034d5750595b908082528060200260200182016040525060159080516200037392916020019062000435565b50600a604051805910620003845750595b90808252806020026020018201604052506016908051620003aa92916020019062000435565b50600a604051805910620003bb5750595b90808252806020026020018201604052506017908051620003e192916020019062000435565b50600a604051805910620003f25750595b908082528060200260200182016040525060189080516200041892916020019062000435565b5060006019556000601a5534156200042f57600080fd5b620004a5565b82805482825590600052602060002090810192821562000473579160200282015b828111156200047357825182559160200191906001019062000456565b506200048192915062000485565b5090565b620004a291905b808211156200048157600081556001016200048c565b90565b6113b280620004b56000396000f3006060604052600436106100da5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166302d190cc81146100df5780631a7ef8dd146100fa5780631c4c02091461011f57806330292f081461013257806339446a6f146101455780633f11889f1461016c57806361bc221a1461017f57806368c822ba146101925780636d4ce63c146101a55780637b736f04146101f157806396ad2d27146102045780639fd15b3314610217578063b1e990ce1461022a578063c3dd43f41461023d578063ccf0f4dd14610250575b600080fd5b34156100ea57600080fd5b6100f8600435602435610263565b005b341561010557600080fd5b61010d6102a1565b60405190815260200160405180910390f35b341561012a57600080fd5b6100f86102a7565b341561013d57600080fd5b61010d610547565b341561015057600080fd5b61015861054d565b604051901515815260200160405180910390f35b341561017757600080fd5b6100f8610558565b341561018a57600080fd5b61010d610a02565b341561019d57600080fd5b6100f8610a08565b34156101b057600080fd5b6101b8610ce6565b60405180878152602001868152602001858152602001848152602001838152602001828152602001965050505050505060405180910390f35b34156101fc57600080fd5b61010d610ee2565b341561020f57600080fd5b61010d610ee8565b341561022257600080fd5b61010d610eee565b341561023557600080fd5b61010d610ef4565b341561024857600080fd5b61010d610efa565b341561025b57600080fd5b6100f8610f00565b8160118281548110151561027357fe5b60009182526020909120015560188054600191908390811061029157fe5b6000918252602090912001555050565b60045481565b60006102b16110a9565b5060005b600a81101561054457600b8054829081106102cc57fe5b9060005260206000209001546011828154811015156102e757fe5b906000526020600020900154131561053c57601180548290811061030757fe5b906000526020600020900154600b8281548110151561032257fe5b600091825260209091200155600c80548290811061033c57fe5b90600052602060002090015460068281548110151561035757fe5b600091825260209091200155600d80548290811061037157fe5b90600052602060002090015460078281548110151561038c57fe5b600091825260209091200155600e8054829081106103a657fe5b9060005260206000209001546008828154811015156103c157fe5b600091825260209091200155600f8054829081106103db57fe5b9060005260206000209001546009828154811015156103f657fe5b600091825260209091200155601080548290811061041057fe5b906000526020600020900154600a8281548110151561042b57fe5b600091825260209091200155601180548290811061044557fe5b906000526020600020900154600b8281548110151561046057fe5b600091825260209091200155600554600b80548390811061047d57fe5b906000526020600020900154131561053c57600b80548290811061049d57fe5b60009182526020909120015460055560068054829081106104ba57fe5b6000918252602082200154905560078054829081106104d557fe5b60009182526020909120015460015560088054829081106104f257fe5b600091825260209091200154600255600980548290811061050f57fe5b600091825260209091200154600355600a80548290811061052c57fe5b6000918252602090912001546004555b6001016102b5565b50565b60055481565b601954606490101590565b600061056261135f565b61056a61135f565b61057261135f565b60008094505b600a8510156109fb575060005b60058110156106a65780151561061c57611f408482600581106105a457fe5b6020020152600442446040519182526020820152604090810190519081900390208115156105ce57fe5b078382600581106105db57fe5b60200201526004424460405191825260208201526040908101905190819003902081151561060557fe5b0782826005811061061257fe5b602002015261069e565b605084826005811061062a57fe5b60200201526004424460405191825260208201526040908101905190819003902081151561065457fe5b0783826005811061066157fe5b60200201526004424460405191825260208201526040908101905190819003902081151561068b57fe5b0782826005811061069857fe5b60200201525b600101610585565b60128054869081106106b457fe5b60009182526020822001549054038251026012868154811015156106d457fe5b9060005260206000209001546006878154811015156106ef57fe5b600091825260209091200154038451028551601280548990811061070f57fe5b90600052602060002090015402010160128681548110151561072d57fe5b600091825260209091200155601380548690811061074757fe5b9060005260206000209001546001540382600160058110151561076657fe5b60200201510260138681548110151561077b57fe5b90600052602060002090015460068781548110151561079657fe5b60009182526020909120015403846001602002015102602086015160138054899081106107bf57fe5b9060005260206000209001540201016013868154811015156107dd57fe5b60009182526020909120015560148054869081106107f757fe5b9060005260206000209001546002540382600260058110151561081657fe5b60200201510260148681548110151561082b57fe5b90600052602060002090015460088781548110151561084657fe5b600091825260209091200154036040850151026040860151601480548990811061086c57fe5b90600052602060002090015402010160148681548110151561088a57fe5b60009182526020909120015560158054869081106108a457fe5b906000526020600020900154600354038260036005811015156108c357fe5b6020020151026015868154811015156108d857fe5b9060005260206000209001546009878154811015156108f357fe5b600091825260209091200154036060850151026060860151601580548990811061091957fe5b90600052602060002090015402010160158681548110151561093757fe5b600091825260209091200155601680548690811061095157fe5b9060005260206000209001546004540382600460058110151561097057fe5b60200201510260168681548110151561098557fe5b906000526020600020900154600a878154811015156109a057fe5b60009182526020909120015403608085015102608086015160168054899081106109c657fe5b9060005260206000209001540201016016868154811015156109e457fe5b600091825260209091200155600190940193610578565b5050505050565b601a5481565b60005b600a81101561054457600019601882815481101515610a2657fe5b6000918252602090912001556123284244604051918252602082015260409081019051908190039020811515610a5857fe5b076103e801600c82815481101515610a6c57fe5b60009182526020909120015560324244604051918252602082015260409081019051908190039020811515610a9d57fe5b07603201600d82815481101515610ab057fe5b60009182526020909120015560284244604051918252602082015260409081019051908190039020811515610ae157fe5b07601401600e82815481101515610af457fe5b60009182526020909120015560284244604051918252602082015260409081019051908190039020811515610b2557fe5b07600a01600f82815481101515610b3857fe5b600091825260209091200155601e4244604051918252602082015260409081019051908190039020811515610b6957fe5b07601e01601082815481101515610b7c57fe5b6000918252602090912001556103e76107ce4244604051918252602082015260409081019051908190039020811515610bb157fe5b0703601282815481101515610bc257fe5b6000918252602090912001556005600a4244604051918252602082015260409081019051908190039020811515610bf557fe5b0703601382815481101515610c0657fe5b600091825260209091200155600460084244604051918252602082015260409081019051908190039020811515610c3957fe5b0703601482815481101515610c4a57fe5b600091825260209091200155600460084244604051918252602082015260409081019051908190039020811515610c7d57fe5b0703601582815481101515610c8e57fe5b600091825260209091200155600360064244604051918252602082015260409081019051908190039020811515610cc157fe5b0703601682815481101515610cd257fe5b600091825260209091200155600101610a0b565b600080600080600080600080600060195460001415610d1557610d07610a08565b601980546001019055610ed7565b60646019541015610ed757601a54600a1415610dce5760009250600091505b600a821015610d68576018805483908110610d4b57fe5b906000526020600020900154830192508180600101925050610d34565b82600a1415610dc957610d796102a7565b610d81610558565b610d89610f00565b506000601a8190556019805460010190555b600a811015610dc9576000601882815481101515610db557fe5b600091825260209091200155600101610d9b565b610ed7565b7f9df117c3674108d4a8cc10c7e24394600a1762ffbc869b594c1fa4016e03a17b600c6001601a5403815481101515610e0357fe5b906000526020600020900154600d6001601a5403815481101515610e2357fe5b906000526020600020900154600e6001601a5403815481101515610e4357fe5b906000526020600020900154600f6001601a5403815481101515610e6357fe5b90600052602060002090015460106001601a5403815481101515610e8357fe5b9060005260206000209001546001601a540360405180878152602001868152602001858152602001848152602001838152602001828152602001965050505050505060405180910390a1601a805460010190555b505050909192939495565b60015481565b60025481565b60035481565b60195481565b60005481565b60005b600a811015610544576012805482908110610f1a57fe5b906000526020600020900154600c82815481101515610f3557fe5b90600052602060002090015401600c82815481101515610f5157fe5b6000918252602090912001556013805482908110610f6b57fe5b906000526020600020900154600d82815481101515610f8657fe5b90600052602060002090015401600d82815481101515610fa257fe5b6000918252602090912001556014805482908110610fbc57fe5b906000526020600020900154600e82815481101515610fd757fe5b90600052602060002090015401600e82815481101515610ff357fe5b600091825260209091200155601580548290811061100d57fe5b906000526020600020900154600f8281548110151561102857fe5b90600052602060002090015401600f8281548110151561104457fe5b600091825260209091200155601680548290811061105e57fe5b90600052602060002090015460108281548110151561107957fe5b9060005260206000209001540160108281548110151561109557fe5b600091825260209091200155600101610f03565b60005b600a81101561054457612710600c828154811015156110c757fe5b90600052602060002090015413156110fc57612710600c828154811015156110eb57fe5b60009182526020909120015561113f565b6103e8600c8281548110151561110e57fe5b906000526020600020900154121561113f576103e8600c8281548110151561113257fe5b6000918252602090912001555b6064600d8281548110151561115057fe5b9060005260206000209001541315611184576064600d8281548110151561117357fe5b6000918252602090912001556111c5565b6032600d8281548110151561119557fe5b90600052602060002090015412156111c5576032600d828154811015156111b857fe5b6000918252602090912001555b603c600e828154811015156111d657fe5b906000526020600020900154131561120a57603c600e828154811015156111f957fe5b60009182526020909120015561124b565b6014600e8281548110151561121b57fe5b906000526020600020900154121561124b576014600e8281548110151561123e57fe5b6000918252602090912001555b6032600f8281548110151561125c57fe5b9060005260206000209001541315611290576032600f8281548110151561127f57fe5b6000918252602090912001556112d1565b600a600f828154811015156112a157fe5b90600052602060002090015412156112d157600a600f828154811015156112c457fe5b6000918252602090912001555b603c6010828154811015156112e257fe5b906000526020600020900154131561131657603c60108281548110151561130557fe5b600091825260209091200155611357565b601e60108281548110151561132757fe5b906000526020600020900154121561135757601e60108281548110151561134a57fe5b6000918252602090912001555b6001016110ac565b60a06040519081016040526005815b600081526020019060019003908161136e57905050905600a165627a7a72305820733551af2c270a98a66e8050dcc83a45df2a1032c2bf933e415d48931fb1f1eb0029"
+    with open('PSO_abi.json') as f:
+        abi = json.load(f)
     # initialize the contract
     HP = w3.eth.contract(abi=abi, bytecode=bytecode)
     tx_hash = HP.constructor().transact()

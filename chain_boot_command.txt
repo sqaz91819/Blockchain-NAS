@@ -1,6 +1,6 @@
 geth --datadir node1 --networkid 3064 --http --http.corsdomain "*" --http.api "eth,net,web3,personal" --http.addr "0.0.0.0" --nodiscover --allow-insecure-unlock --bootnodes "enode://7978610ccec76c0a36e16a2202de1ddd29ecec9e6e3a5f5ad0022379cf26d60959350d8f9bddc25de51bf42d194bb6e9846cd3093974ae286cbacb97a22b77ab@140.117.172.238:30303?discport=0" console
 geth --datadir bootnode --networkid 3064 --http --http.corsdomain "*" --http.api "eth,net,web3,personal" --http.addr "0.0.0.0" --nodiscover --allow-insecure-unlock console
-geth --datadir node1 --networkid 77 --http --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --http.addr "0.0.0.0" --nodiscover --allow-insecure-unlock --nat extip:140.117.172.250 console
+geth --datadir tzuchieh_node1 --networkid 145 --http --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --http.addr "0.0.0.0" --nodiscover --allow-insecure-unlock  console
 
 
 

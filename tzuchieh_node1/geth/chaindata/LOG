@@ -1,0 +1,35 @@
+=============== Apr 13, 2021 (CST) ===============
+16:29:10.730449 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:29:10.737573 db@open opening
+16:29:10.737917 version@stat F·[] S·0B[] Sc·[]
+16:29:10.740529 db@janitor F·2 G·0
+16:29:10.740544 db@open done T·2.958861ms
+16:29:10.743911 db@close closing
+16:29:10.743935 db@close done T·23.73µs
+=============== Apr 13, 2021 (CST) ===============
+16:31:37.384086 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:31:37.384155 version@stat F·[] S·0B[] Sc·[]
+16:31:37.384166 db@open opening
+16:31:37.384201 journal@recovery F·1
+16:31:37.385412 journal@recovery recovering @1
+16:31:37.389629 memdb@flush created L0@2 N·622 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xfe\x88\xcf..H\xef\xcc,v362"
+16:31:37.390969 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+16:31:37.400025 db@janitor F·3 G·0
+16:31:37.400037 db@open done T·15.866735ms
+16:31:37.415305 table@compaction range L-1 "a":"b"
+16:31:37.415316 table@compaction L0·1 -> L1·0 S·50KiB Q·628
+16:31:37.422136 table@build created L1@5 N·622 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xfe\x88\xcf..H\xef\xcc,v362"
+16:31:37.422187 version@stat F·[0 1] S·50KiB[0B 50KiB] Sc·[0.00 0.00]
+16:31:37.426542 table@compaction committed F~ S~ Ke·0 D·0 T·11.202042ms
+16:31:37.428492 memdb@flush N·6 S·184B
+16:31:37.431323 memdb@flush created L0@7 N·6 S·322B "Dat..ion,v624":"unc..own,v629"
+16:31:37.431367 version@stat F·[1 1] S·51KiB[322B 50KiB] Sc·[0.25 0.00]
+16:31:37.435790 memdb@flush committed F·1 T·7.249644ms
+16:31:37.435878 journal@remove removed @3
+16:31:37.435890 table@compaction range L-1 "o":"p"
+16:31:37.435905 table@compaction L0·1 -> L1·1 S·51KiB Q·629
+16:31:37.439399 table@build created L1@8 N·626 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xfe\x88\xcf..H\xef\xcc,v362"
+16:31:37.439444 version@stat F·[0 1] S·50KiB[0B 50KiB] Sc·[0.00 0.00]
+16:31:37.444003 table@compaction committed F-1 S-835B Ke·0 D·2 T·8.080278ms
+16:31:37.458199 table@remove removed @7
+16:31:37.458226 table@remove removed @5
