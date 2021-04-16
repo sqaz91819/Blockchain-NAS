@@ -79,7 +79,7 @@ if __name__ == "__main__":
             continue
         # print(tx_receipt)
         n_tasks += 1
-
+        print(tx_receipt['logs'][0])
         log_to_process = tx_receipt['logs'][0]
         processed_log = hp.events.parameter_log().processLog(log_to_process)
         counter = processed_log['args']['counter']

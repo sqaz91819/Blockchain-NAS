@@ -53,7 +53,7 @@ contract PSO_1 {
     }
 
 
-    function get()  public returns(int,int,int,int,int,uint){
+    function get()  public {
         if(ITER == 0)
         {
             RANDOM_INI();

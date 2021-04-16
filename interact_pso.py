@@ -35,23 +35,34 @@ if __name__ == "__main__":
             print("Timeout occur and write back tx to timeout list...")
             timeout_tx.append(tx_hash)
             continue
-        # print(tx_receipt)
+       
         n_tasks += 1
-
-        print(tx_receipt['logs'])
+       
         log_to_process = tx_receipt['logs'][0]
+        print(log_to_process)
+        
         processed_log = hp.events.Particle().processLog(log_to_process)
-
+        
         counter = processed_log['args']['counter']
+        print(counter)
 
-        lr = processed_log['args']['LR']
+        lr = counter[1]
+        # lr = processed_log['args']['LR']
         lr = float(lr) / float(100000)
 
-        epochs = processed_log['args']['Epoch']
-        batch_size = processed_log['args']['batch']
-        layers = processed_log['args']['Layer']
-        width = processed_log['args']['Width']
-        print('Number of the parameters : ', counter)
+        epochs = int(counter[2]/10)
+        # epochs = processed_log['args']['Epoch']
+
+        batch_size = pow(2,int(counter[3]/10))
+        # batch_size = processed_log['args']['batch']
+
+        layers = int(counter[4]/10)
+        # layers = processed_log['args']['Layer']
+
+        width = pow(2,int(counter[5]/10))
+
+        # width = processed_log['args']['Width']
+        print('Number of the parameters : ', counter[0])
         
         print('Learning Rate : ', lr)
         print('Epochs        : ', epochs)
@@ -64,11 +75,12 @@ if __name__ == "__main__":
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
         acc = trainer.train()
+        acc = int(acc*10000)
         training_t += time() - s
 
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
-        tx_hash = hp.functions.set_accuracy(acc, counter).transact()
+        tx_hash = hp.functions.set_accuracy(acc, counter[0]).transact()
         try:
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=1200)
         except web3.exceptions.TimeExhausted:
