@@ -1,3 +1,4 @@
+import sys
 import json
 import web3
 from web3 import Web3
@@ -46,22 +47,32 @@ if __name__ == "__main__":
         counter = processed_log['args']['counter']
         print(counter)
 
-        lr = counter[1]
+        lr = counter[2]
         # lr = processed_log['args']['LR']
         lr = float(lr) / float(100000)
 
-        epochs = int(counter[2]/10)
+        epochs = int(counter[3]/10)
         # epochs = processed_log['args']['Epoch']
 
-        batch_size = pow(2,int(counter[3]/10))
+        batch_size = pow(2,int(counter[4]/10))
         # batch_size = processed_log['args']['batch']
 
-        layers = int(counter[4]/10)
+        layers = int(counter[5]/10)
         # layers = processed_log['args']['Layer']
 
-        width = pow(2,int(counter[5]/10))
-
+        width = pow(2,int(counter[6]/10))
+        with open('record.txt', 'a') as f2:
+            f2.write('Number of the Iteration : '+str(counter[1]) + '\n')
+            f2.write('Number of the parameters : '+str(counter[0]) + '\n')
+            f2.write('Learning Rate : '+str(lr) + '\n')
+            f2.write('Epochs        : '+str(epochs)+ '\n')
+            f2.write('Batch size    : '+str(batch_size)+ '\n')
+            f2.write('Layers        : '+str(layers)+ '\n')
+            f2.write('Width         : '+str(width)+ '\n')
+            f2.write("---------------------------------------------------------"+ '\n')
+        f2.close()
         # width = processed_log['args']['Width']
+        print('Number of the Iteration : ', counter[1])
         print('Number of the parameters : ', counter[0])
         
         print('Learning Rate : ', lr)
@@ -70,7 +81,6 @@ if __name__ == "__main__":
         print('Layers        : ', layers)
         print('Width         : ', width)
         print("----------------------------------------------------------")
-        
         s = time()
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)

@@ -1,0 +1,8 @@
+Number of the Iteration :  0
+Number of the parameters :  4
+Learning Rate :  0.01
+Epochs        :  5
+Batch size    :  4
+Layers        :  1
+Width         :  8
+----------------------------------------------------------

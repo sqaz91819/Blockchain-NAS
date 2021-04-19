@@ -54,3 +54,43 @@
 19:30:04.491517 version@stat F·[2 1] S·3MiB[3MiB 50KiB] Sc·[0.50 0.00]
 19:30:04.501726 db@janitor F·5 G·0
 19:30:04.501742 db@open done T·62.421779ms
+=============== Apr 16, 2021 (CST) ===============
+19:45:49.330593 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:45:49.330877 version@stat F·[2 1] S·3MiB[3MiB 50KiB] Sc·[0.50 0.00]
+19:45:49.330902 db@open opening
+19:45:49.330963 journal@recovery F·1
+19:45:49.332466 journal@recovery recovering @13
+19:45:49.347424 memdb@flush created L0@15 N·10587 S·563KiB "H\x00\x11..G\xe7R,v68054":"unc..own,v67477"
+19:45:49.348837 version@stat F·[3 1] S·3MiB[3MiB 50KiB] Sc·[0.75 0.00]
+19:45:49.361031 db@janitor F·6 G·0
+19:45:49.361043 db@open done T·30.135129ms
+=============== Apr 16, 2021 (CST) ===============
+20:02:33.761692 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:02:33.761837 version@stat F·[3 1] S·3MiB[3MiB 50KiB] Sc·[0.75 0.00]
+20:02:33.761847 db@open opening
+20:02:33.761874 journal@recovery F·1
+20:02:33.763087 journal@recovery recovering @16
+20:02:33.770904 memdb@flush created L0@18 N·5057 S·283KiB "H\x00T..R\xbf\xc4,v79456":"unc..own,v78064"
+20:02:33.772161 version@stat F·[4 1] S·4MiB[4MiB 50KiB] Sc·[1.00 0.00]
+20:02:33.783528 db@janitor F·7 G·0
+20:02:33.783540 db@open done T·21.688677ms
+20:02:33.783596 table@compaction L0·4 -> L1·1 S·4MiB Q·83120
+20:02:33.813771 table@build created L1@21 N·34020 S·2MiB "\x02d\xfc..\x19Ba,v430":"h\x00\x00..\xb6\xdf\xfa,v19470"
+20:02:33.840017 table@build created L1@22 N·18231 S·1MiB "h\x00\x00..\xdf\xfat,v19467":"\xfe\x88\xcf..H\xef\xcc,v362"
+20:02:33.840100 version@stat F·[0 2] S·3MiB[0B 3MiB] Sc·[0.00 0.03]
+20:02:33.847200 table@compaction committed F-3 S-1MiB Ke·0 D·30862 T·63.576866ms
+20:02:33.880782 table@remove removed @15
+20:02:33.880995 table@remove removed @12
+20:02:33.881134 table@remove removed @9
+20:02:33.881159 table@remove removed @8
+=============== Apr 19, 2021 (CST) ===============
+02:36:30.345101 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+02:36:30.345218 version@stat F·[0 2] S·3MiB[0B 3MiB] Sc·[0.00 0.03]
+02:36:30.345229 db@open opening
+02:36:30.345297 journal@recovery F·1
+02:36:30.346368 journal@recovery recovering @19
+02:36:30.572262 memdb@flush created L0@23 N·200723 S·9MiB "B\x00\x00..\xef\x9e#,v159457":"unc..own,v83122"
+02:36:30.577195 version@stat F·[1 2] S·12MiB[9MiB 3MiB] Sc·[0.25 0.03]
+02:36:30.588329 db@janitor F·6 G·1
+02:36:30.588341 db@janitor removing table-18
+02:36:30.588433 db@open done T·243.199664ms
