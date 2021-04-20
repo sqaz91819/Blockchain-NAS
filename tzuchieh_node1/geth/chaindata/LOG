@@ -94,3 +94,36 @@
 02:36:30.588329 db@janitor F·6 G·1
 02:36:30.588341 db@janitor removing table-18
 02:36:30.588433 db@open done T·243.199664ms
+23:17:38.365509 db@close closing
+23:17:38.366809 db@close done T·1.298064ms
+=============== Apr 19, 2021 (CST) ===============
+23:17:41.386576 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:17:41.386676 version@stat F·[1 2] S·12MiB[9MiB 3MiB] Sc·[0.25 0.03]
+23:17:41.386708 db@open opening
+23:17:41.386741 journal@recovery F·1
+23:17:41.387916 journal@recovery recovering @24
+23:17:41.509487 memdb@flush created L0@26 N·107331 S·5MiB "\x00\x00\xd3..\"\xc4\xd2,v391013":"\xff\xb2\x86..\x86\xa1>,v390571"
+23:17:41.510650 version@stat F·[2 2] S·18MiB[15MiB 3MiB] Sc·[0.50 0.03]
+23:17:41.521065 db@janitor F·6 G·0
+23:17:41.521081 db@open done T·134.367673ms
+23:17:41.542829 memdb@flush N·263 S·10KiB
+23:17:41.546026 memdb@flush created L0@30 N·263 S·10KiB "Sna..tor,v391180":"o(%..\xfa\f\xf6,d391439"
+23:17:41.546046 version@stat F·[3 2] S·18MiB[15MiB 3MiB] Sc·[0.75 0.03]
+23:17:41.552832 memdb@flush committed F·1 T·9.968512ms
+23:17:41.552917 journal@remove removed @27
+23:17:41.552930 table@compaction range L-1 "a":"b"
+23:17:41.552947 table@compaction L0·3 -> L1·2 S·18MiB Q·391440
+23:17:41.596156 table@build created L1@31 N·56256 S·2MiB "\x00\x00\xd3..\"\xc4\xd2,v391013":"b\x00\x00..\xfa\xc6Y,v25200"
+23:17:41.621393 table@build created L1@32 N·42379 S·2MiB "b\x00\x00..P\x8a\xbe,v3482":"h\x00\x00..\xde\xda3,v79709"
+23:17:41.645211 table@build created L1@33 N·22054 S·2MiB "h\x00\x00..\xda3t,v79706":"h\x00\x00..\xf1\xa0J,v104127"
+23:17:41.670363 table@build created L1@34 N·23559 S·2MiB "h\x00\x00..\xa0Jt,v104124":"h\x00\x00..\xf0\xad\xf5,v137597"
+23:17:41.695204 table@build created L1@35 N·24763 S·2MiB "h\x00\x00..\xad\xf5t,v137594":"h\x00\x00..\v\x04\x94,v186562"
+23:17:41.719745 table@build created L1@36 N·29342 S·2MiB "h\x00\x00..\x04\x94t,v186559":"h\x00\x00..\xf6~\x16,v274347"
+23:17:41.743956 table@build created L1@37 N·46210 S·2MiB "h\x00\x00..~\x16t,v274344":"\xff\xb2\x86..\x86\xa1>,v390571"
+23:17:41.743992 version@stat F·[0 7] S·14MiB[0B 14MiB] Sc·[0.00 0.15]
+23:17:41.746413 table@compaction committed F+2 S-3MiB Ke·0 D·116005 T·193.453736ms
+23:17:41.746484 table@remove removed @30
+23:17:41.747359 table@remove removed @23
+23:17:41.747566 table@remove removed @21
+23:17:41.746449 table@compaction range L-1 "o":"p"
+23:17:41.747757 table@remove removed @22

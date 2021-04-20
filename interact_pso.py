@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     print('Contract Address : ', addr)
     hp = w3.eth.contract(address=addr, abi=abi)
-
+ 
     while True:
         print("Task has not been completed!")
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         n_tasks += 1
        
         log_to_process = tx_receipt['logs'][0]
-        print(log_to_process)
+        # print(log_to_process)
         
         processed_log = hp.events.Particle().processLog(log_to_process)
         
@@ -85,7 +85,7 @@ if __name__ == "__main__":
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
         acc = trainer.train()
-        acc = int(acc*10000)
+        acc = int(acc*100)
         training_t += time() - s
 
         # send transaction for set the accuracy to smart contract in block chain
@@ -93,16 +93,23 @@ if __name__ == "__main__":
         tx_hash = hp.functions.set_accuracy(acc, counter[0]).transact()
         try:
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=1200)
+        
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
             pass
-
+        
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
         print("----------------------------------------------------------")
         print("Upload acc " + str(acc) + " to smart contract, success!")
         print("----------------------------------------------------------")
-
+        log_to_process = tx_receipt['logs'][0]
+        # print(log_to_process)
+        
+        processed_log = hp.events.ACC().processLog(log_to_process)
+        
+        AA = processed_log['args']['A']
+        print(AA)
     print("Task completed!")
 
     # print("Perform the repair process...")

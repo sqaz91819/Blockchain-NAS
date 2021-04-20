@@ -4,3 +4,6 @@ miner.stop()
 miner.start
 miner.start()
 miner.stop()
+miner.start()
+miner.stop()
+miner.start()
