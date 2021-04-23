@@ -26,7 +26,7 @@ Reconstruct blockcain steps:
             all servers close the blockcain node
 
     step7 : Original server git add account
-            git comiit -m 'new account'
+            git commit -m 'new account'
             git push
 
     step8 : All servers git pull to get the pre-found account.
