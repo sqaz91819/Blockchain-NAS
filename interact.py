@@ -72,20 +72,24 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.get_parameters().transact()
         try:
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=480)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=720)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur and write back tx to timeout list...")
             timeout_tx.append(tx_hash)
             continue
-        # print(tx_receipt)
+        except:
+            pass
         n_tasks += 1
 
-        log_to_process = tx_receipt['logs'][0]
-        processed_log = hp.events.parameter_log().processLog(log_to_process)
-        counter = processed_log['args']['counter']
-        print('Number of the parameters : ', counter)
-        
-        lr, epochs, batch_size, layers, width = decoder(counter)
+        try:
+            log_to_process = tx_receipt['logs'][0]
+            processed_log = hp.events.parameter_log().processLog(log_to_process)
+            counter = processed_log['args']['counter']
+            print('Number of the parameters : ', counter)
+            
+            lr, epochs, batch_size, layers, width = decoder(counter)
+        except:
+            continue
         print('Learning Rate : ', lr)
         print('Epochs        : ', epochs)
         print('Batch size    : ', batch_size)
@@ -103,9 +107,11 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         try:
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=240)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=300)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
+            pass
+        except:
             pass
 
         print("--Waiting for uploading accuracy transaction be verified--")
@@ -124,11 +130,16 @@ if __name__ == "__main__":
         except web3.exceptions.TimeExhausted:
             print('Transaction failed and can not repair.')
             continue
+        except:
+            pass
         n_tasks += 1
-        log_to_process = tx_receipt['logs'][0]
-        processed_log = hp.events.parameter_log().processLog(log_to_process)
-        counter = processed_log['args']['counter']
-        lr, epochs, batch_size, layers, width = decoder(counter)
+        try:
+            log_to_process = tx_receipt['logs'][0]
+            processed_log = hp.events.parameter_log().processLog(log_to_process)
+            counter = processed_log['args']['counter']
+            lr, epochs, batch_size, layers, width = decoder(counter)
+        except:
+            continue
         print('Learning Rate : ', lr)
         print('Epochs        : ', epochs)
         print('Batch size    : ', batch_size)
@@ -146,9 +157,11 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         try:
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=80)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=120)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
+            pass
+        except:
             pass
         print("--Waiting for uploading accuracy transaction be verified--")
         # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
