@@ -34,7 +34,7 @@ Reconstruct blockcain steps:
     step9 : All nodes get enode by admin.nodeInfo.enode
             Write enode to static-nodes.json
             git add static-nodes.json
-            git commit 'static-nodes.json'
+            git commit -m 'static-nodes.json'
             git push
 
     step10: All servers restart the blockcain nodes.
