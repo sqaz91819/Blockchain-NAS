@@ -70,8 +70,8 @@ if __name__ == "__main__":
     while not hp.functions.end_of_contract().call():
         print("Task has not been completed!")
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
-        tx_hash = hp.functions.get_parameters().transact()
         try:
+            tx_hash = hp.functions.get_parameters().transact()
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=720)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur and write back tx to timeout list...")
@@ -105,8 +105,8 @@ if __name__ == "__main__":
 
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
-        tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         try:
+            tx_hash = hp.functions.set_accuracy(acc, counter).transact()
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=300)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
@@ -155,8 +155,8 @@ if __name__ == "__main__":
 
         # send transaction for set the accuracy to smart contract in block chain
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
-        tx_hash = hp.functions.set_accuracy(acc, counter).transact()
         try:
+            tx_hash = hp.functions.set_accuracy(acc, counter).transact()
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=120)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
