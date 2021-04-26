@@ -11,9 +11,14 @@ if __name__ == "__main__":
                 "content":'''
                     pragma solidity >= 0.5.2;
                     contract PSO_1 {
+                        uint public pop = 15;
+                        uint public ITERATION = 20;
 
                         event Particle(int []counter);
                         event ACC(int []A);
+                        event Particle_V(int []Vector);
+                        event CURRENT_BEST_ACC(int BEST_ACC);
+
                         int public ALL_Best_LR ;
                         int public ALL_Best_Epoch ;
                         int public ALL_Best_Batch ;
@@ -21,44 +26,62 @@ if __name__ == "__main__":
                         int public ALL_Best_Width ;
                         int public ALL_Best_Accuracy ;
                         int[] public TEST =  new int[](7);
-                        int[] public CHECK =  new int[](10) ;
+                        int[] public TEST_V =  new int[](5);
+                        int[] public CHECK =  new int[](pop) ;
 
-                        int[] private P_Best_LR =  new int[](10) ;
-                        int[] private P_Best_Epoch = new int[](10);
-                        int[] private P_Best_Batch = new int[](10);
-                        int[] private P_Best_Layer = new int[](10);
-                        int[] private P_Best_Width = new int[](10);
-                        int[] private P_Best_Accuracy = new int[](10);
+                        int[] private P_Best_LR =  new int[](pop) ;
+                        int[] private P_Best_Epoch = new int[](pop);
+                        int[] private P_Best_Batch = new int[](pop);
+                        int[] private P_Best_Layer = new int[](pop);
+                        int[] private P_Best_Width = new int[](pop);
+                        int[] private P_Best_Accuracy = new int[](pop);
 
-                        int[] private LR = new int[](10);
-                        int[] private Epoch = new int[](10);
-                        int[] private Batch = new int[](10);
-                        int[] private Layer = new int[](10);
-                        int[] private Width = new int[](10);
-                        int[] private Accuracy = new int[](10);
+                        int[] private LR = new int[](pop);
+                        int[] private Epoch = new int[](pop);
+                        int[] private Batch = new int[](pop);
+                        int[] private Layer = new int[](pop);
+                        int[] private Width = new int[](pop);
+                        int[] public Accuracy = new int[](pop);
                         
-                        int[] private LR_v = new int[](10);
-                        int[] private Epoch_v = new int[](10);
-                        int[] private Batch_v = new int[](10);
-                        int[] private Layer_v = new int[](10);
-                        int[] private Width_v = new int[](10);
-                        int[] private Accuracy_v = new int[](10);
+                        int[] private LR_v = new int[](pop);
+                        int[] private Epoch_v = new int[](pop);
+                        int[] private Batch_v = new int[](pop);
+                        int[] private Layer_v = new int[](pop);
+                        int[] private Width_v = new int[](pop);
 
-                        int constant LR_max = 10000;
-                        int constant LR_min = 1000;
-                        int constant Epoch_max = 100;
-                        int constant Epoch_min = 50;
-                        int constant Batch_max = 60;
-                        int constant Batch_min = 20;
-                        int constant Layer_max = 50;
-                        int constant Layer_min = 10;
-                        int constant Width_max = 60;
-                        int constant Width_min = 30;
+                        int constant LR_max = 1000000;
+                        int constant LR_min = 100000;
+                        int constant Epoch_max = 10000;
+                        int constant Epoch_min = 4000;
+                        int constant Batch_max = 64000;
+                        int constant Batch_min = 4000;
+                        int constant Layer_max = 5000;
+                        int constant Layer_min = 1000; 
+                        int constant Width_max = 128000;
+                        int constant Width_min = 8000;
+
+                        int constant LR_max_v = 45000;
+                        int constant LR_min_v = -45000;
+                        int constant Epoch_max_v = 500;
+                        int constant Epoch_min_v = -500;
+                        int constant Batch_max_v = 3000;
+                        int constant Batch_min_v = -3000;
+                        int constant Layer_max_v = 200;
+                        int constant Layer_min_v = -200; 
+                        int constant Width_max_v = 6000;
+                        int constant Width_min_v = -6000;
+
 
                         int public ITER = 0;
                         int public counter  = 0; 
                         uint public randNonce = 0;
+                        uint public randNonce1 = 0;
 
+
+                        function Current_ACC() public {
+                            
+                            emit CURRENT_BEST_ACC(ALL_Best_Accuracy);
+                        }
 
                         function set_accuracy(int acc,int ind) public {
                             Accuracy[uint(ind)] = acc ;
@@ -67,13 +90,23 @@ if __name__ == "__main__":
                         }
 
                          function end_of_contract() view public returns (bool){
-                            return ITER >= 30 ;
+                            return ITER > int(ITERATION) ;
                         }
+                        function get_Vector(int counter) public{
+                            
+                            TEST_V[0] = LR_v[uint(counter)];
+                            TEST_V[1] = Epoch_v[uint(counter)];
+                            TEST_V[2] = Batch_v[uint(counter)];
+                            TEST_V[3] = Layer_v[uint(counter)];
+                            TEST_V[4] = Width_v[uint(counter)];
 
+                            return Particle_V(TEST_V);
+                        }
                         function get()  public  {
                             if(ITER == 0 && counter==0)
                             {
                                 RANDOM_INI();
+                                RANDOM_VECTOR() ;
                                 TEST[0] = counter;
                                 TEST[1] = ITER;
                                 TEST[2] = LR[uint(counter)];
@@ -81,22 +114,26 @@ if __name__ == "__main__":
                                 TEST[4] = Batch[uint(counter)];
                                 TEST[5] = Layer[uint(counter)];
                                 TEST[6] = Width[uint(counter)];
+
+                              
+
+
                                 emit Particle(TEST);
                                 counter ++;
                             }    
-                            else if(ITER < 30)
+                            else if(ITER < int(ITERATION))
                             {
                                 
-                                if(counter == 10 )
+                                if(counter == int(pop) )
                                 {
                                     uint  sum = 0;
                                     
-                                    for(uint i = 0;i<10;i++)
+                                    for(uint i = 0;i<pop;i++)
                                     {
                                         sum += uint(CHECK[i]);
                                     }
 
-                                    if(sum == 10)
+                                    if(sum == pop)
                                     {
                                         ITER++;
                                         counter = 0;        
@@ -104,7 +141,7 @@ if __name__ == "__main__":
                                         Update_Velocity();
                                         Update_Position();
 
-                                        for(uint j = 0;j<10;j++)
+                                        for(uint j = 0;j<pop;j++)
                                         {
                                             CHECK[j] = 0;
                                         }
@@ -119,13 +156,13 @@ if __name__ == "__main__":
                                         counter ++;
                                     }
                                     else{
-                                        TEST[0] = 0;
-                                        TEST[1] = 0;
-                                        TEST[2] = 0;
-                                        TEST[3] = 0;
-                                        TEST[4] = 0;
-                                        TEST[5] = 0;
-                                        TEST[6] = 0;
+                                        TEST[0] = -1;
+                                        TEST[1] = -1;
+                                        TEST[2] = -1;
+                                        TEST[3] = -1;
+                                        TEST[4] = -1;
+                                        TEST[5] = -1;
+                                        TEST[6] = -1;
                                         emit Particle(TEST);
                                     }
                             
@@ -143,7 +180,7 @@ if __name__ == "__main__":
                                 }
 
                             }
-                            else if(ITER == 30)
+                            else if(ITER == int(ITERATION))
                             {
                                 TEST[0] = counter;
                                 TEST[1] = ITER;
@@ -157,37 +194,128 @@ if __name__ == "__main__":
 
                         
                     }
+
+
                         function RANDOM_INI() public{
-                            for(uint i = 0 ; i < 10 ; i++)
+                            for(uint i = 0 ; i < pop ; i++)
                             {
                                 //random x 
+                                randNonce += uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                //randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
+
                                 CHECK[i] = 0;
 
-                                LR[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%9000)+1000;
+                                LR[i] = int(uint(keccak256(abi.encodePacked(block.timestamp, randNonce)))% (uint(LR_max-LR_min)))+LR_min;
 
-                                Epoch[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%50)+50;
+                                randNonce += uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%1052) ;    
+                                //randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
 
-                                Batch[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%40)+20;
-
-                                Layer[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%40)+10;
-
-                                Width[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))% 30) + 30;
+                                Epoch[i] = int( uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))% (uint(Epoch_max-Epoch_min)) )+Epoch_min;
 
 
+                                randNonce += uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%31) ;    
+                                //randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
 
-                                //random vector
-                                LR_v[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%1998)-999;
+                                Batch[i] = int(uint(keccak256(abi.encodePacked(block.timestamp, randNonce)))%(uint(Batch_max-Batch_min)))+Batch_min;
 
-                                Epoch_v[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%10)-5;
+       
 
-                                Batch_v[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%8)-4;
+                                randNonce += uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%890) ;    
+                                //randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
 
-                                Layer_v[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%8)-4;
+                                Layer[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%(uint(Layer_max-Layer_min)))+Layer_min;
 
-                                Width_v[i] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%6)-3;
+                                randNonce += uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%87) ;    
+                               // randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
+
+                                Width[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))% (uint(Width_max-Width_min)) )+ Width_min;
+
+
+
+
+                             
                             }
                             INRANGE();
                             
+                        }
+                        function RANDOM_VECTOR() public{
+                            for(uint i=0;i<pop;i++)
+                            {
+
+                                randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;     
+                                randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ;  
+                                    //random vector
+                                LR_v[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%90000)-45000;
+
+                                randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ; 
+
+                                Epoch_v[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%1000)-500;
+
+                                randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ; 
+
+                                Batch_v[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%6000)-3000;
+
+                                randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ; 
+
+                                Layer_v[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%400)-200;
+
+                                randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp)))%7) ; 
+
+                                Width_v[i] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%12000)-6000;
+                            }
+                        }
+                        function Vector_In_Range() private{
+                            for(uint i=0;i<pop;i++)
+                            {
+                                if(LR_v[i] > LR_max_v)
+                                {
+                                    LR_v[i] = LR_max_v;
+                                }
+                                else if (LR_v[i] < LR_min_v)
+                                {
+                                    LR_v[i] = LR_min_v;
+                                }
+                                if(Epoch_v[i] > Epoch_max_v)
+                                {
+                                    Epoch_v[i] = Epoch_max_v;
+                                }
+                                else if (Epoch_v[i] <  Epoch_min_v)
+                                {
+                                    Epoch_v[i] = Epoch_min_v;
+                                }
+
+                                if(Batch_v[i] > Batch_max_v)
+                                {
+                                    Batch_v[i] = Batch_max_v;
+                                }
+                                else if (Batch_v[i] < Batch_min_v)
+                                {
+                                    Batch_v[i] = Batch_min_v;
+                                }
+
+                                if(Layer_v[i] > Layer_max_v)
+                                {
+                                    Layer_v[i] = Layer_max_v;
+
+                                }
+                                else if (Layer_v[i] < Layer_min_v)
+                                {
+                                    Layer_v[i] = Layer_min_v;
+                                }
+
+                                if(Width_v[i] > Width_max_v)
+                                {
+                                    Width_v[i] = Width_max_v;
+                                }
+                                else if (Width_v[i] < Width_min_v)
+                                {
+                                    Width_v[i] = Width_min_v;
+                                }
+                            }   
                         }
                         function Update_Velocity() public
                         {
@@ -195,43 +323,46 @@ if __name__ == "__main__":
                             // Defining a function to generate
                             // a random number
                          
-                            randNonce++;  
                           
-                            for(uint i = 0;i < 10;i++)
+                            for(uint i = 0;i < pop;i++)
                             {
                                 int[5] memory w;
                                 int[5] memory c1;
                                 int[5] memory c2;
                                 for(uint j = 0;j < 5;j++)
                                 {
-                                    if( j==0 )
-                                    {
-                                        w[j]= 800;
-                                        c1[j] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%4000);
-                                        c2[j] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%4000);
+                                  
+                                        w[j]= 5;
+
+                                        randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                        randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%7) ; 
+
+                                        c1[j] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%30);
+
+                                        //c1[j] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%4);
+                                                                                                                        
+                                        randNonce = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%50) ;    
+                                        randNonce1 = uint(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce)))%7) ; 
 
 
-                                    }
-                                    else{
-                                        w[j] = 8;
-                                        c1[j] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%4000);
-                                        c2[j] = int(uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, randNonce)))%4000);
-                                    }
+                                        c2[j] = int(uint(keccak256(abi.encodePacked(block.difficulty,block.timestamp, randNonce,randNonce1)))%50);
+
                                 }
 
-                                LR_v[i] = LR_v[i] * w[0] + c1[0] * (P_Best_LR[i] - LR_v[i] ) + c2[0] * (ALL_Best_LR - LR_v[i]);
-                                Epoch_v[i] = Epoch_v[i]*w[1] + c1[1] * (P_Best_LR[i] - Epoch_v[i]) + c2[1] * (ALL_Best_Epoch - Epoch_v[i]);
-                                Batch_v[i] = Batch_v[i]*w[2] + c1[2] * (P_Best_Batch[i] - Batch_v[i]) + c2[2] * (ALL_Best_Batch - Batch_v[i]);
-                                Layer_v[i] = Layer_v[i]*w[3] + c1[3]*(P_Best_Layer[i] - Layer_v[i]) + c2[3]*(ALL_Best_Layer - Layer_v[i]);
-                                Width_v[i] = Width_v[i]*w[4] + c1[4]*(P_Best_Width[i] - Width_v[i]) + c2[4]*(ALL_Best_Width - Width_v[i]);
+                                LR_v[i] = LR_v[i] * w[0] /10 + c1[0] * (P_Best_LR[i] - LR_v[i] ) /1000 + c2[0] * (ALL_Best_LR - LR_v[i]) /10000;
+                                Epoch_v[i] = Epoch_v[i]*w[1]/10 + c1[1] * (P_Best_LR[i] - Epoch_v[i]) /1000  + c2[1] * (ALL_Best_Epoch - Epoch_v[i])/10000 ;
+                                Batch_v[i] = Batch_v[i]*w[2] /10  + c1[2] * (P_Best_Batch[i] - Batch_v[i])/1000  + c2[2] * (ALL_Best_Batch - Batch_v[i])/10000 ;
+                                Layer_v[i] = Layer_v[i]*w[3] /10+ c1[3]*(P_Best_Layer[i] - Layer_v[i]) /1000 + c2[3]*(ALL_Best_Layer - Layer_v[i])/10000 ;
+                                Width_v[i] = Width_v[i]*w[4] /10+ c1[4]*(P_Best_Width[i] - Width_v[i]) /1000 + c2[4]*(ALL_Best_Width - Width_v[i])/10000 ;
+
+                                
                             }
 
-                            // Test_random =  mulDiv (uint x, uint y, uint z)
-
+                            Vector_In_Range();
                         }
                         function Update_Position() public
                         {
-                            for(uint i = 0;i < 10;i++)
+                            for(uint i = 0;i < pop;i++)
                             {
                                 LR[i] = LR[i] + LR_v[i];
                                 Epoch[i] = Epoch[i] + Epoch_v[i]; 
@@ -243,7 +374,7 @@ if __name__ == "__main__":
                         }
                         function Evaluate() public
                         {
-                            for(uint i = 0;i < 10;i++)
+                            for(uint i = 0;i < pop;i++)
                             {
                                 if(Accuracy[i] > P_Best_Accuracy[i])
                                 {
@@ -269,7 +400,7 @@ if __name__ == "__main__":
                         }
                         function INRANGE() private
                         {
-                            for(uint i = 0;i < 10;i++)
+                            for(uint i = 0;i < pop;i++)
                             {
                                 if(LR[i] > LR_max )
                                 {
@@ -320,19 +451,7 @@ if __name__ == "__main__":
 
 
 
-                        // function mulDiv ()public pure returns (uint)
-                        // {  
-                            
-                        //     uint w = 8000;
-                            
-                        //     uint c1 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
-
-                        //     uint c2 = uint8(uint256(keccak256(block.timestamp, block.difficulty))%40000);
-
-                            
-                        //     return x * y / z;
-                        
-                        // }
+    
 
                         }
                             

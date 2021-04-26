@@ -1,0 +1,22 @@
+Number of the Iteration : 0
+Number of the parameters : 0
+Learning Rate : 0.0459864
+Epochs        : 5
+Batch size    : 34
+Layers        : 4
+Width         : 17
+Accuracy      : 18.61%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 25652 7 -2929 145 -2943
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 1
+Learning Rate : 0.0220514
+Epochs        : 9
+Batch size    : 28
+Layers        : 3
+Width         : 83
+Accuracy      : 93.76%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 16507 -429 945 57 1507
+---------------------------------------------------------

@@ -1,8 +1,2898 @@
 Number of the Iteration : 0
 Number of the parameters : 0
-Learning Rate : 0.03556
+Learning Rate : 0.0455903
 Epochs        : 5
 Batch size    : 32
 Layers        : 4
+Width         : 32
+Accuracy         : 221700
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 1
+Learning Rate : 0.0579392
+Epochs        : 7
+Batch size    : 8
+Layers        : 2
+Width         : 32
+Accuracy         : 203800
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 2
+Learning Rate : 0.0202652
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 16
+Accuracy         : 840600
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 3
+Learning Rate : 0.0645143
+Epochs        : 9
+Batch size    : 16
+Layers        : 3
 Width         : 8
+Accuracy         : 101000
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 4
+Learning Rate : 0.0416691
+Epochs        : 6
+Batch size    : 8
+Layers        : 2
+Width         : 16
+Accuracy         : 187500
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 5
+Learning Rate : 0.077152
+Epochs        : 7
+Batch size    : 8
+Layers        : 2
+Width         : 16
+Accuracy         : 211800
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 6
+Learning Rate : 0.0628256
+Epochs        : 7
+Batch size    : 16
+Layers        : 3
+Width         : 16
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 7
+Learning Rate : 0.0243473
+Epochs        : 9
+Batch size    : 4
+Layers        : 1
+Width         : 32
+Accuracy         : 827700
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 8
+Learning Rate : 0.0170954
+Epochs        : 7
+Batch size    : 32
+Layers        : 4
+Width         : 16
+Accuracy         : 915400
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 9
+Learning Rate : 0.086157
+Epochs        : 6
+Batch size    : 4
+Layers        : 1
+Width         : 16
+Accuracy         : 100900
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 101000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 97400
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 97900
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 98200
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 102700
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 103200
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy         : 113400
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 0
+Learning Rate : 0.0537455
+Epochs        : 8
+Batch size    : 32
+Layers        : 4
+Width         : 16
+Accuracy      : 2924.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 1
+Learning Rate : 0.0687248
+Epochs        : 8
+Batch size    : 16
+Layers        : 3
+Width         : 16
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 2
+Learning Rate : 0.0336805
+Epochs        : 8
+Batch size    : 32
+Layers        : 4
+Width         : 32
+Accuracy      : 3673.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 3
+Learning Rate : 0.0323122
+Epochs        : 7
+Batch size    : 16
+Layers        : 3
+Width         : 16
+Accuracy      : 5346.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 4
+Learning Rate : 0.0667424
+Epochs        : 6
+Batch size    : 4
+Layers        : 1
+Width         : 32
+Accuracy      : 1994.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 5
+Learning Rate : 0.0911676
+Epochs        : 6
+Batch size    : 8
+Layers        : 2
+Width         : 8
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 6
+Learning Rate : 0.095591
+Epochs        : 5
+Batch size    : 8
+Layers        : 2
+Width         : 16
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 7
+Learning Rate : 0.0539492
+Epochs        : 8
+Batch size    : 32
+Layers        : 4
+Width         : 16
+Accuracy      : 2953.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 8
+Learning Rate : 0.08879
+Epochs        : 8
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1565.0%
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 9
+Learning Rate : 0.0315662
+Epochs        : 6
+Batch size    : 8
+Layers        : 2
+Width         : 8
+Accuracy      : 4424.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9585.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9628.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9638.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9556.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9617.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9603.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9587.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9617.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9514.0%
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9592.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9580.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9592.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9625.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9578.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9638.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9617.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9653.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9653.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9527.0%
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9599.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9627.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9625.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9642.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9667.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9592.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9606.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9484.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9598.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9639.0%
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9616.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9499.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9574.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9534.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9587.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9588.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9618.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9642.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9620.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9606.0%
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9631.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9646.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9539.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9614.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9648.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9645.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9653.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9646.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9607.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9649.0%
+---------------------------------------------------------
+Number of the Iteration : 6
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9599.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8622.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8161.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8245.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 7860.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8668.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8309.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8693.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8335.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8607.0%
+---------------------------------------------------------
+Number of the Iteration : 7
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8622.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 891.0%
+---------------------------------------------------------
+Number of the Iteration : 8
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 7426.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8844.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8245.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 7577.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8920.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 6169.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8805.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8223.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 7411.0%
+---------------------------------------------------------
+Number of the Iteration : 9
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 5
+Batch size    : 4
+Layers        : 1
+Width         : 8
+Accuracy      : 8555.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9639.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9624.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9659.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9549.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9641.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9574.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9614.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9562.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9648.0%
+---------------------------------------------------------
+Number of the Iteration : 10
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9649.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9678.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9682.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9667.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9613.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9667.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9567.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9573.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9473.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9567.0%
+---------------------------------------------------------
+Number of the Iteration : 11
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9562.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9675.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9600.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9682.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9671.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9559.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9571.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9602.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9602.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9628.0%
+---------------------------------------------------------
+Number of the Iteration : 12
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9686.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9636.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9635.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9585.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9620.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9557.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9641.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9541.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9431.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9581.0%
+---------------------------------------------------------
+Number of the Iteration : 13
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9600.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9442.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9634.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9634.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9625.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9661.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9610.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9623.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9566.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9620.0%
+---------------------------------------------------------
+Number of the Iteration : 14
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9611.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9578.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9649.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9664.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9656.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9605.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9653.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9667.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9667.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9659.0%
+---------------------------------------------------------
+Number of the Iteration : 15
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9664.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9614.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9556.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9602.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9649.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9613.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9624.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9654.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9603.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9670.0%
+---------------------------------------------------------
+Number of the Iteration : 16
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9602.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 0
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9559.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 1
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9642.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 2
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9610.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 3
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9664.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 4
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9610.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 5
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9627.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 6
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9677.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 7
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9664.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 8
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9635.0%
+---------------------------------------------------------
+Number of the Iteration : 17
+Number of the parameters : 9
+Learning Rate : 0.01
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 9591.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3449.0%
+---------------------------------------------------------
+Number of the Iteration : 18
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3495.0%
+---------------------------------------------------------
+Number of the Iteration : 19
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3337.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 4151.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1904.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 20
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 4393.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3409.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2381.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 21
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 22
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3219.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2073.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 23
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 4869.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 24
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2039.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 3919.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 25
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 891.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1028.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2944.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 26
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 891.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 982.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2867.0%
+---------------------------------------------------------
+Number of the Iteration : 27
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1394.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 2101.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1032.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 28
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1010.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 979.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 1
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 957.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 3
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1009.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 4
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1027.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 5
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1831.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 6
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 7
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 8
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1879.0%
+---------------------------------------------------------
+Number of the Iteration : 29
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 974.0%
+---------------------------------------------------------
+Number of the Iteration : 30
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 5
+Width         : 64
+Accuracy      : 1134.0%
 ---------------------------------------------------------

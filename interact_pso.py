@@ -49,28 +49,19 @@ if __name__ == "__main__":
 
         lr = counter[2]
         # lr = processed_log['args']['LR']
-        lr = float(lr) / float(100000)
+        lr = float(lr) / float(10000000)
 
-        epochs = int(counter[3]/10)
+        epochs = int(round(counter[3]/1000))
         # epochs = processed_log['args']['Epoch']
 
-        batch_size = pow(2,int(counter[4]/10))
+        batch_size = int(round(counter[4]/1000))
         # batch_size = processed_log['args']['batch']
 
-        layers = int(counter[5]/10)
+        layers = int(round(counter[5]/1000))
         # layers = processed_log['args']['Layer']
 
-        width = pow(2,int(counter[6]/10))
-        with open('record.txt', 'a') as f2:
-            f2.write('Number of the Iteration : '+str(counter[1]) + '\n')
-            f2.write('Number of the parameters : '+str(counter[0]) + '\n')
-            f2.write('Learning Rate : '+str(lr) + '\n')
-            f2.write('Epochs        : '+str(epochs)+ '\n')
-            f2.write('Batch size    : '+str(batch_size)+ '\n')
-            f2.write('Layers        : '+str(layers)+ '\n')
-            f2.write('Width         : '+str(width)+ '\n')
-            f2.write("---------------------------------------------------------"+ '\n')
-        f2.close()
+        width = int(round(counter[6]/1000))
+        
         # width = processed_log['args']['Width']
         print('Number of the Iteration : ', counter[1])
         print('Number of the parameters : ', counter[0])
@@ -85,7 +76,11 @@ if __name__ == "__main__":
         # Training process...
         trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
         acc = trainer.train()
-        acc = int(acc*100)
+        print(acc)
+        acc = int(acc*10)
+
+        
+
         training_t += time() - s
 
         # send transaction for set the accuracy to smart contract in block chain
@@ -106,10 +101,53 @@ if __name__ == "__main__":
         log_to_process = tx_receipt['logs'][0]
         # print(log_to_process)
         
+
+
+        
+        
         processed_log = hp.events.ACC().processLog(log_to_process)
         
         AA = processed_log['args']['A']
         print(AA)
+
+        tx_hash = hp.functions.Current_ACC().transact()
+        try:
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=1200)
+        
+        except web3.exceptions.TimeExhausted:
+            print("Timeout occur in GET Current Best...")
+            pass
+        log_to_process = tx_receipt['logs'][0]
+        processed_log = hp.events.CURRENT_BEST_ACC().processLog(log_to_process)
+        ALL_BEST = processed_log['args']['BEST_ACC']
+        
+
+        tx_hash = hp.functions.get_Vector(counter[0]).transact()
+        try:
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=1200)
+        
+        except web3.exceptions.TimeExhausted:
+            print("Timeout occur in GET vector...")
+            pass
+        log_to_process = tx_receipt['logs'][0]
+        processed_log = hp.events.Particle_V().processLog(log_to_process)
+        counter_V = processed_log['args']['Vector']
+
+
+        
+        with open('record6.txt', 'a') as f2:
+            f2.write('Number of the Iteration : '+str(counter[1]) + '\n')
+            f2.write('Number of the parameters : '+str(counter[0]) + '\n')
+            f2.write('Learning Rate : '+str(lr) + '\n')
+            f2.write('Epochs        : '+str(epochs)+ '\n')
+            f2.write('Batch size    : '+str(batch_size)+ '\n')
+            f2.write('Layers        : '+str(layers)+ '\n')
+            f2.write('Width         : '+str(width)+ '\n')
+            f2.write('Accuracy      : '+str(acc/1000)+'%'+'\n')
+            f2.write('Current Best Accuracy      : '+str(ALL_BEST/1000)+'%'+'\n')
+            f2.write('LR Epochs Batch  Layer Width : '+str(counter_V[0])+' '+str(counter_V[1])+' '+str(counter_V[2])+' '+str(counter_V[3])+' '+str(counter_V[4])+'\n')
+            f2.write("---------------------------------------------------------"+ '\n')
+        f2.close()
     print("Task completed!")
 
     # print("Perform the repair process...")
