@@ -20,3 +20,25 @@ Accuracy      : 93.76%
 Current Best Accuracy      : 0.0%
 LR Epochs Batch  Layer Width : 16507 -429 945 57 1507
 ---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 3
+Learning Rate : 0.0725744
+Epochs        : 9
+Batch size    : 60
+Layers        : 2
+Width         : 92
+Accuracy      : 42.77%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -11055 -443 -1493 -129 -2055
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 2
+Learning Rate : 0.0447966
+Epochs        : 9
+Batch size    : 21
+Layers        : 2
+Width         : 31
+Accuracy      : 48.76%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 9071 445 57 107 71
+---------------------------------------------------------
