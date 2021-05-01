@@ -55,9 +55,9 @@ if __name__ == "__main__":
     for i in range(405):
         lr, epoch, batch, layer, width = decoder(i)
         print('Learning Rate : ', lr)
-        print('Epochs        : ', epochs)
-        print('Batch size    : ', batch_size)
-        print('Layers        : ', layers)
+        print('Epochs        : ', epoch)
+        print('Batch size    : ', batch)
+        print('Layers        : ', layer)
         print('Width         : ', width)
         print("----------------------------------------------------------")
         s = time()
