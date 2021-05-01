@@ -8,7 +8,7 @@ from time import time
 '''
 hard code grid of parameters #=8250
 '''
-LR         = [0.1, 0.05, 0.01, 0.005, 0.001]
+LR         = [0.01, 0.005, 0.001, 0.0005, 0.0001]
 EPOCHS     = [5,6,7]
 BATCH_SIZE = [16,32,48]
 LAYERS     = [1,2,3]
