@@ -8,11 +8,16 @@ from time import time
 '''
 hard code grid of parameters #=8250
 '''
-LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
-EPOCHS     = [5,6,7,8,9,10]
-BATCH_SIZE = [16,32,64,128,256]
-LAYERS     = [1,2,3,4,5]
-WIDTH      = [8,16,32,64,128]
+LR         = [0.1, 0.05, 0.01, 0.005, 0.001]
+EPOCHS     = [5,6,7]
+BATCH_SIZE = [16,32,64]
+LAYERS     = [1,2,3]
+WIDTH      = [32,64,128]
+# LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
+# EPOCHS     = [5,6,7,8,9,10]
+# BATCH_SIZE = [16,32,64,128,256]
+# LAYERS     = [1,2,3,4,5]
+# WIDTH      = [8,16,32,64,128]
 
 '''
 Example : 777
@@ -72,7 +77,7 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         try:
             tx_hash = hp.functions.get_parameters().transact()
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=720)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=700)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur and write back tx to timeout list...")
             timeout_tx.append(tx_hash)
@@ -107,7 +112,7 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         try:
             tx_hash = hp.functions.set_accuracy(acc, counter).transact()
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=300)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=240)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
             pass
@@ -126,7 +131,7 @@ if __name__ == "__main__":
     # reprocess the timeout tx
     for tx in timeout_tx:
         try:
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx, timeout=100)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx, timeout=120)
         except web3.exceptions.TimeExhausted:
             print('Transaction failed and can not repair.')
             continue
@@ -157,7 +162,7 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         try:
             tx_hash = hp.functions.set_accuracy(acc, counter).transact()
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=120)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=150)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
             pass
