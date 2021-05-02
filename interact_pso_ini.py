@@ -8,8 +8,8 @@ from trainer import Trainer
 from time import time
 
 pop = 20
-LR_max = 1000000
-LR_min = 100000
+LR_max = 100000
+LR_min = 1000
 Epoch_max = 10000
 Epoch_min = 4000
 Batch_max = 64000
@@ -18,24 +18,26 @@ Layer_max = 5000
 Layer_min = 1000 
 Width_max = 128000
 Width_min = 8000
-LR_max_v = 45000
-LR_min_v = -45000
-Epoch_max_v = 500
-Epoch_min_v = -500
-Batch_max_v = 3000
-Batch_min_v = -3000
-Layer_max_v = 200
-Layer_min_v = -200
-Width_max_v = 6000
-Width_min_v = -6000
+LR_max_v = 1237
+LR_min_v = -1237
+Epoch_max_v = 125
+Epoch_min_v = -125
+Batch_max_v = 750
+Batch_min_v = -750
+Layer_max_v = 50
+Layer_min_v = -50
+Width_max_v = 1500
+Width_min_v = -1500
+c2_max = 80
 c_max = 40
 c_min = 0
+Convergence = []
 
 def PSO_random_initial_vector_Parameter(arr1,arr2):
     random.seed()
     for i in range(5):
         arr1.append(int(round(random.uniform(c_min,c_max))))
-        arr2.append(int(round(random.uniform(c_min,c_max))))
+        arr2.append(int(round(random.uniform(c_min,c2_max))))
     
 def PSO_random_initial(arr) : 
     random.seed()
@@ -228,7 +230,7 @@ if __name__ == "__main__":
             pass
 
 
-        with open('record8.txt', 'a') as f2:
+        with open('record15.txt', 'a') as f2:
             f2.write('Number of the Iteration : '+str(counter[1]) + '\n')
             f2.write('Number of the parameters : '+str(counter[0]) + '\n')
             f2.write('Learning Rate : '+str(lr) + '\n')
@@ -241,7 +243,13 @@ if __name__ == "__main__":
             f2.write('LR Epochs Batch  Layer Width : '+str(counter_V[0])+' '+str(counter_V[1])+' '+str(counter_V[2])+' '+str(counter_V[3])+' '+str(counter_V[4])+'\n')
             f2.write("---------------------------------------------------------"+ '\n')
         f2.close()
+        
+        with open('Convergence_15.txt', 'a') as f3:
+            f3.write(str(counter[1])+' '+str(ALL_BEST/1000)+'%'+'\n')
+        f3.close()
     print("Task completed!")
+
+
 
     # print("Perform the repair process...")
     # # reprocess the timeout tx

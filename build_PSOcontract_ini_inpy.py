@@ -12,7 +12,7 @@ if __name__ == "__main__":
                     pragma solidity >= 0.5.2;
                     contract PSO_1 {
                         uint public pop = 20;
-                        uint public ITERATION = 25;
+                        uint public ITERATION = 20;
                         uint public Parameter = 5;
 
                         event Particle(int []counter);
@@ -50,8 +50,8 @@ if __name__ == "__main__":
                         int[] private Layer_v = new int[](pop);
                         int[] private Width_v = new int[](pop);
 
-                        int constant LR_max = 1000000;
-                        int constant LR_min = 100000;
+                        int constant LR_max = 100000;
+                        int constant LR_min = 1000;
                         int constant Epoch_max = 10000;
                         int constant Epoch_min = 4000;
                         int constant Batch_max = 64000;
@@ -61,16 +61,16 @@ if __name__ == "__main__":
                         int constant Width_max = 128000;
                         int constant Width_min = 8000;
 
-                        int constant LR_max_v = 45000;
-                        int constant LR_min_v = -45000;
-                        int constant Epoch_max_v = 500;
-                        int constant Epoch_min_v = -500;
-                        int constant Batch_max_v = 3000;
-                        int constant Batch_min_v = -3000;
-                        int constant Layer_max_v = 200;
-                        int constant Layer_min_v = -200; 
-                        int constant Width_max_v = 6000;
-                        int constant Width_min_v = -6000;
+                        int constant LR_max_v = 1237;
+                        int constant LR_min_v = -1237;
+                        int constant Epoch_max_v = 125;
+                        int constant Epoch_min_v = -125;
+                        int constant Batch_max_v = 750;
+                        int constant Batch_min_v = -750;
+                        int constant Layer_max_v = 50;
+                        int constant Layer_min_v = -50; 
+                        int constant Width_max_v = 1500;
+                        int constant Width_min_v = -1500;
 
                       
                         int[] private c1 = new int[](pop*Parameter);
@@ -325,14 +325,14 @@ if __name__ == "__main__":
                           
                             for(uint i = 0;i < pop;i++)
                             {
-                                int w= 20;
+                                int w = 2;
                                
 
-                                LR_v[i] = LR_v[i] * w /1000 + c1[(i*Parameter)+0] * int(P_Best_LR[i] - LR_v[i] ) /1000 + c2[(i*Parameter)+0] * (ALL_Best_LR - LR_v[i]) /1000;
-                                Epoch_v[i] = Epoch_v[i]*w/1000 + c1[(i*Parameter)+1] * int(P_Best_Epoch[i] - Epoch_v[i]) /1000 + c2[(i*Parameter)+1] * (ALL_Best_Epoch - Epoch_v[i])/1000 ;
-                                Batch_v[i] = Batch_v[i]*w/1000+ c1[(i*Parameter)+2] * int(P_Best_Batch[i] - Batch_v[i])/1000  + c2[(i*Parameter)+2] * (ALL_Best_Batch - Batch_v[i])/1000 ;
-                                Layer_v[i] = Layer_v[i]*w/1000 + c1[(i*Parameter)+3] * int(P_Best_Layer[i] - Layer_v[i]) /1000 + c2[(i*Parameter)+3] *(ALL_Best_Layer - Layer_v[i])/1000 ;
-                                Width_v[i] = Width_v[i]*w/1000 + c1[(i*Parameter)+4] * int(P_Best_Width[i] - Width_v[i]) /1000+ c2[(i*Parameter)+4] *(ALL_Best_Width - Width_v[i])/1000 ;
+                                LR_v[i] = LR_v[i] * w /int(1000) + int(c1[(i*Parameter)+0]) * (int(P_Best_LR[i]) - int(LR_v[i])) /int(1000) + int(c2[(i*Parameter)+0]) * (int(ALL_Best_LR) - int(LR_v[i])) /int(1000);
+                                Epoch_v[i] = Epoch_v[i]*w/int(1000) + int(c1[(i*Parameter)+1])* (int(P_Best_Epoch[i]) - int(Epoch_v[i])) / int(1000) + int(c2[(i*Parameter)+1]) * (int(ALL_Best_Epoch) - int(Epoch_v[i]) )/int(1000) ;
+                                Batch_v[i] = Batch_v[i]*w/int(1000) + int(c1[(i*Parameter)+2]) * (int(P_Best_Batch[i]) - int(Batch_v[i]) )/int(1000)  + int(c2[(i*Parameter)+2]) * (int(ALL_Best_Batch) - int(Batch_v[i]) )/int(1000) ;
+                                Layer_v[i] = Layer_v[i]*w/int(1000) + int(c1[(i*Parameter)+3]) * (int(P_Best_Layer[i]) - int(Layer_v[i]) ) /int(1000) + int(c2[(i*Parameter)+3]) *(int(ALL_Best_Layer) - int(Layer_v[i]) )/int(1000) ;
+                                Width_v[i] = Width_v[i]*w/int(1000) + int(c1[(i*Parameter)+4]) * ( int(P_Best_Width[i]) - int(Width_v[i]) ) /int(1000) + int(c2[(i*Parameter)+4]) *(int(ALL_Best_Width) - int(Width_v[i]) ) /int(1000) ;
 
                                 
                             }

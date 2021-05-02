@@ -1,0 +1,1265 @@
+Number of the Iteration : 0
+Number of the parameters : 0
+Learning Rate : 0.0896632
+Epochs        : 5
+Batch size    : 17
+Layers        : 2
+Width         : 84
+Accuracy      : 20.29%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 27841 -84 -2108 -11 2202
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 1
+Learning Rate : 0.0119073
+Epochs        : 9
+Batch size    : 37
+Layers        : 2
+Width         : 93
+Accuracy      : 95.55%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 18989 210 2653 22 172
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 2
+Learning Rate : 0.0791632
+Epochs        : 9
+Batch size    : 57
+Layers        : 2
+Width         : 13
+Accuracy      : 58.64%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -2024 375 1780 141 -2619
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 3
+Learning Rate : 0.0684208
+Epochs        : 9
+Batch size    : 15
+Layers        : 4
+Width         : 103
+Accuracy      : 10.32%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 4312 81 2988 -199 2343
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 4
+Learning Rate : 0.0596149
+Epochs        : 9
+Batch size    : 52
+Layers        : 1
+Width         : 113
+Accuracy      : 85.4%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 34603 114 -134 35 -24
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 5
+Learning Rate : 0.053511
+Epochs        : 8
+Batch size    : 23
+Layers        : 3
+Width         : 46
+Accuracy      : 30.07%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -15772 146 -684 -79 126
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 6
+Learning Rate : 0.0593812
+Epochs        : 9
+Batch size    : 39
+Layers        : 4
+Width         : 105
+Accuracy      : 10.27%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -11077 -119 1841 54 1686
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 7
+Learning Rate : 0.0333658
+Epochs        : 5
+Batch size    : 55
+Layers        : 5
+Width         : 126
+Accuracy      : 65.61%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -41888 -341 -106 -115 -1161
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 8
+Learning Rate : 0.0634095
+Epochs        : 5
+Batch size    : 50
+Layers        : 2
+Width         : 55
+Accuracy      : 77.54%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -15001 -460 881 56 -2662
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 9
+Learning Rate : 0.0859973
+Epochs        : 4
+Batch size    : 42
+Layers        : 1
+Width         : 117
+Accuracy      : 68.12%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -40934 410 103 187 -4495
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 10
+Learning Rate : 0.0268848
+Epochs        : 7
+Batch size    : 49
+Layers        : 4
+Width         : 86
+Accuracy      : 89.89%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -17241 15 1299 -93 -1776
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 11
+Learning Rate : 0.0597505
+Epochs        : 6
+Batch size    : 7
+Layers        : 3
+Width         : 52
+Accuracy      : 18.02%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -35746 -209 160 -182 46
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 12
+Learning Rate : 0.0247062
+Epochs        : 8
+Batch size    : 39
+Layers        : 2
+Width         : 107
+Accuracy      : 94.09%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -35830 -220 -806 -127 897
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 13
+Learning Rate : 0.0761002
+Epochs        : 6
+Batch size    : 52
+Layers        : 3
+Width         : 33
+Accuracy      : 35.55%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 10255 -113 -1916 90 1623
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 14
+Learning Rate : 0.0576419
+Epochs        : 6
+Batch size    : 4
+Layers        : 2
+Width         : 115
+Accuracy      : 11.34%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -39189 349 2574 53 3115
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 15
+Learning Rate : 0.0263391
+Epochs        : 9
+Batch size    : 57
+Layers        : 2
+Width         : 121
+Accuracy      : 94.05%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 14267 -179 344 98 -717
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 16
+Learning Rate : 0.0756916
+Epochs        : 9
+Batch size    : 59
+Layers        : 2
+Width         : 48
+Accuracy      : 42.53%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 18507 -274 2384 -34 -2648
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 17
+Learning Rate : 0.0915275
+Epochs        : 4
+Batch size    : 45
+Layers        : 2
+Width         : 57
+Accuracy      : 20.26%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : -19726 414 1624 192 -5117
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 18
+Learning Rate : 0.0612714
+Epochs        : 8
+Batch size    : 14
+Layers        : 2
+Width         : 64
+Accuracy      : 18.01%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 7436 134 991 -165 -2564
+---------------------------------------------------------
+Number of the Iteration : 0
+Number of the parameters : 19
+Learning Rate : 0.0892793
+Epochs        : 7
+Batch size    : 41
+Layers        : 3
+Width         : 126
+Accuracy      : 9.82%
+Current Best Accuracy      : 0.0%
+LR Epochs Batch  Layer Width : 43278 -201 -126 59 -3065
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 0
+Learning Rate : 0.0941632
+Epochs        : 5
+Batch size    : 20
+Layers        : 3
+Width         : 90
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 1
+Learning Rate : 0.0147171
+Epochs        : 10
+Batch size    : 40
+Layers        : 2
+Width         : 99
+Accuracy      : 95.8%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 28098 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 2
+Learning Rate : 0.0836632
+Epochs        : 9
+Batch size    : 60
+Layers        : 2
+Width         : 19
+Accuracy      : 37.25%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 3
+Learning Rate : 0.0729208
+Epochs        : 10
+Batch size    : 18
+Layers        : 4
+Width         : 109
+Accuracy      : 10.27%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 4
+Learning Rate : 0.0641149
+Epochs        : 10
+Batch size    : 55
+Layers        : 2
+Width         : 119
+Accuracy      : 70.27%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 5
+Learning Rate : 0.058011
+Epochs        : 9
+Batch size    : 26
+Layers        : 3
+Width         : 52
+Accuracy      : 29.42%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 6
+Learning Rate : 0.0638812
+Epochs        : 9
+Batch size    : 42
+Layers        : 5
+Width         : 111
+Accuracy      : 18.56%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 7
+Learning Rate : 0.0346367
+Epochs        : 5
+Batch size    : 58
+Layers        : 5
+Width         : 128
+Accuracy      : 10.58%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 12709 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 8
+Learning Rate : 0.0679095
+Epochs        : 5
+Batch size    : 53
+Layers        : 2
+Width         : 61
+Accuracy      : 39.12%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 9
+Learning Rate : 0.0904973
+Epochs        : 5
+Batch size    : 45
+Layers        : 2
+Width         : 123
+Accuracy      : 18.0%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 10
+Learning Rate : 0.0313848
+Epochs        : 7
+Batch size    : 52
+Layers        : 4
+Width         : 92
+Accuracy      : 19.74%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 11
+Learning Rate : 0.0642505
+Epochs        : 6
+Batch size    : 10
+Layers        : 3
+Width         : 56
+Accuracy      : 19.05%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 3298
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 12
+Learning Rate : 0.0292062
+Epochs        : 8
+Batch size    : 42
+Layers        : 2
+Width         : 113
+Accuracy      : 93.62%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 13
+Learning Rate : 0.0806002
+Epochs        : 6
+Batch size    : 55
+Layers        : 3
+Width         : 39
+Accuracy      : 25.26%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 14
+Learning Rate : 0.0621419
+Epochs        : 6
+Batch size    : 7
+Layers        : 2
+Width         : 121
+Accuracy      : 19.47%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 15
+Learning Rate : 0.0308391
+Epochs        : 10
+Batch size    : 60
+Layers        : 2
+Width         : 127
+Accuracy      : 93.66%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 16
+Learning Rate : 0.0801916
+Epochs        : 9
+Batch size    : 62
+Layers        : 3
+Width         : 54
+Accuracy      : 20.82%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 17
+Learning Rate : 0.0960275
+Epochs        : 5
+Batch size    : 48
+Layers        : 2
+Width         : 63
+Accuracy      : 20.62%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 18
+Learning Rate : 0.0657714
+Epochs        : 9
+Batch size    : 17
+Layers        : 2
+Width         : 70
+Accuracy      : 20.49%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 1
+Number of the parameters : 19
+Learning Rate : 0.0937793
+Epochs        : 7
+Batch size    : 44
+Layers        : 3
+Width         : 128
+Accuracy      : 25.49%
+Current Best Accuracy      : 95.55%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 0
+Learning Rate : 0.0986632
+Epochs        : 6
+Batch size    : 23
+Layers        : 3
+Width         : 96
+Accuracy      : 36.21%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 1
+Learning Rate : 0.0192171
+Epochs        : 10
+Batch size    : 43
+Layers        : 2
+Width         : 105
+Accuracy      : 95.23%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 2940 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 2
+Learning Rate : 0.0881632
+Epochs        : 10
+Batch size    : 63
+Layers        : 2
+Width         : 25
+Accuracy      : 36.0%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 3
+Learning Rate : 0.0774208
+Epochs        : 10
+Batch size    : 21
+Layers        : 4
+Width         : 115
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 4
+Learning Rate : 0.0686149
+Epochs        : 10
+Batch size    : 58
+Layers        : 2
+Width         : 125
+Accuracy      : 44.02%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 5
+Learning Rate : 0.062511
+Epochs        : 9
+Batch size    : 29
+Layers        : 4
+Width         : 58
+Accuracy      : 16.6%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 6
+Learning Rate : 0.0683812
+Epochs        : 10
+Batch size    : 45
+Layers        : 5
+Width         : 117
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 7
+Learning Rate : 0.0379119
+Epochs        : 6
+Batch size    : 61
+Layers        : 5
+Width         : 128
+Accuracy      : 11.34%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 32752 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 8
+Learning Rate : 0.0724095
+Epochs        : 6
+Batch size    : 56
+Layers        : 3
+Width         : 67
+Accuracy      : 19.08%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 9
+Learning Rate : 0.0949973
+Epochs        : 5
+Batch size    : 48
+Layers        : 2
+Width         : 128
+Accuracy      : 30.37%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 10
+Learning Rate : 0.0358848
+Epochs        : 7
+Batch size    : 55
+Layers        : 5
+Width         : 98
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 374 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 11
+Learning Rate : 0.0687505
+Epochs        : 7
+Batch size    : 13
+Layers        : 3
+Width         : 62
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 12
+Learning Rate : 0.0337062
+Epochs        : 9
+Batch size    : 45
+Layers        : 2
+Width         : 119
+Accuracy      : 91.97%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 13
+Learning Rate : 0.0851002
+Epochs        : 7
+Batch size    : 58
+Layers        : 3
+Width         : 45
+Accuracy      : 10.1%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 14
+Learning Rate : 0.0666419
+Epochs        : 7
+Batch size    : 10
+Layers        : 2
+Width         : 127
+Accuracy      : 19.23%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 15
+Learning Rate : 0.0353391
+Epochs        : 10
+Batch size    : 63
+Layers        : 2
+Width         : 128
+Accuracy      : 93.25%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 4880
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 16
+Learning Rate : 0.0846916
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 60
+Accuracy      : 28.09%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 17
+Learning Rate : 0.1
+Epochs        : 5
+Batch size    : 51
+Layers        : 3
+Width         : 69
+Accuracy      : 21.08%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 18
+Learning Rate : 0.0700792
+Epochs        : 9
+Batch size    : 20
+Layers        : 2
+Width         : 76
+Accuracy      : 19.76%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 43078 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 2
+Number of the parameters : 19
+Learning Rate : 0.0982793
+Epochs        : 8
+Batch size    : 47
+Layers        : 4
+Width         : 128
+Accuracy      : 11.34%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 6
+Batch size    : 26
+Layers        : 3
+Width         : 102
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 1
+Learning Rate : 0.0237171
+Epochs        : 10
+Batch size    : 46
+Layers        : 2
+Width         : 111
+Accuracy      : 94.98%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 2
+Learning Rate : 0.0926632
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 31
+Accuracy      : 10.1%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 3
+Learning Rate : 0.0819208
+Epochs        : 10
+Batch size    : 24
+Layers        : 4
+Width         : 121
+Accuracy      : 10.32%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 4
+Learning Rate : 0.0731149
+Epochs        : 10
+Batch size    : 61
+Layers        : 2
+Width         : 128
+Accuracy      : 48.35%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 5
+Learning Rate : 0.065286
+Epochs        : 10
+Batch size    : 32
+Layers        : 4
+Width         : 64
+Accuracy      : 11.34%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 27750 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 6
+Learning Rate : 0.0728812
+Epochs        : 10
+Batch size    : 48
+Layers        : 5
+Width         : 123
+Accuracy      : 10.32%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 7
+Learning Rate : 0.0424119
+Epochs        : 6
+Batch size    : 64
+Layers        : 5
+Width         : 128
+Accuracy      : 29.94%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 8
+Learning Rate : 0.0769095
+Epochs        : 6
+Batch size    : 59
+Layers        : 3
+Width         : 73
+Accuracy      : 18.73%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 9
+Learning Rate : 0.0994973
+Epochs        : 6
+Batch size    : 51
+Layers        : 2
+Width         : 128
+Accuracy      : 25.94%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 10
+Learning Rate : 0.0403848
+Epochs        : 8
+Batch size    : 58
+Layers        : 5
+Width         : 104
+Accuracy      : 11.34%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 11
+Learning Rate : 0.0732505
+Epochs        : 7
+Batch size    : 16
+Layers        : 3
+Width         : 68
+Accuracy      : 19.35%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 12
+Learning Rate : 0.0382062
+Epochs        : 9
+Batch size    : 48
+Layers        : 3
+Width         : 125
+Accuracy      : 79.14%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 13
+Learning Rate : 0.0896002
+Epochs        : 7
+Batch size    : 61
+Layers        : 4
+Width         : 51
+Accuracy      : 31.65%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 14
+Learning Rate : 0.0711419
+Epochs        : 7
+Batch size    : 12
+Layers        : 2
+Width         : 128
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 1634 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 15
+Learning Rate : 0.0398391
+Epochs        : 10
+Batch size    : 64
+Layers        : 2
+Width         : 128
+Accuracy      : 90.95%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 5618
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 16
+Learning Rate : 0.0891916
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 66
+Accuracy      : 17.21%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 17
+Learning Rate : 0.1
+Epochs        : 6
+Batch size    : 54
+Layers        : 3
+Width         : 75
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 18
+Learning Rate : 0.0745792
+Epochs        : 10
+Batch size    : 23
+Layers        : 3
+Width         : 82
+Accuracy      : 10.27%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 3
+Number of the parameters : 19
+Learning Rate : 0.1
+Epochs        : 8
+Batch size    : 50
+Layers        : 4
+Width         : 128
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 7
+Batch size    : 29
+Layers        : 3
+Width         : 108
+Accuracy      : 21.05%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 1
+Learning Rate : 0.0280261
+Epochs        : 10
+Batch size    : 49
+Layers        : 2
+Width         : 117
+Accuracy      : 93.15%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 43090 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 2
+Learning Rate : 0.0971632
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 37
+Accuracy      : 30.18%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 3
+Learning Rate : 0.0864208
+Epochs        : 10
+Batch size    : 27
+Layers        : 5
+Width         : 127
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 4
+Learning Rate : 0.0776149
+Epochs        : 10
+Batch size    : 64
+Layers        : 2
+Width         : 128
+Accuracy      : 20.62%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 5
+Learning Rate : 0.069786
+Epochs        : 10
+Batch size    : 35
+Layers        : 4
+Width         : 70
+Accuracy      : 12.72%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 6
+Learning Rate : 0.0773812
+Epochs        : 10
+Batch size    : 51
+Layers        : 5
+Width         : 128
+Accuracy      : 10.32%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 7
+Learning Rate : 0.0469119
+Epochs        : 7
+Batch size    : 64
+Layers        : 5
+Width         : 128
+Accuracy      : 18.61%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 8
+Learning Rate : 0.0814095
+Epochs        : 7
+Batch size    : 62
+Layers        : 3
+Width         : 79
+Accuracy      : 27.54%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 6
+Batch size    : 54
+Layers        : 2
+Width         : 128
+Accuracy      : 21.17%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 10
+Learning Rate : 0.0448848
+Epochs        : 8
+Batch size    : 61
+Layers        : 5
+Width         : 110
+Accuracy      : 18.89%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 11
+Learning Rate : 0.0777505
+Epochs        : 8
+Batch size    : 19
+Layers        : 4
+Width         : 74
+Accuracy      : 10.1%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 12
+Learning Rate : 0.0420656
+Epochs        : 10
+Batch size    : 51
+Layers        : 3
+Width         : 128
+Accuracy      : 70.59%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 38594 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 13
+Learning Rate : 0.0941002
+Epochs        : 8
+Batch size    : 64
+Layers        : 4
+Width         : 57
+Accuracy      : 9.74%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 14
+Learning Rate : 0.0756419
+Epochs        : 8
+Batch size    : 15
+Layers        : 2
+Width         : 128
+Accuracy      : 18.85%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 15
+Learning Rate : 0.0443391
+Epochs        : 10
+Batch size    : 64
+Layers        : 2
+Width         : 128
+Accuracy      : 91.82%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 16
+Learning Rate : 0.0936916
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 71
+Accuracy      : 26.12%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 4912
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 17
+Learning Rate : 0.1
+Epochs        : 6
+Batch size    : 57
+Layers        : 3
+Width         : 81
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 18
+Learning Rate : 0.0790792
+Epochs        : 10
+Batch size    : 26
+Layers        : 3
+Width         : 88
+Accuracy      : 9.79%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 4
+Number of the parameters : 19
+Learning Rate : 0.1
+Epochs        : 9
+Batch size    : 53
+Layers        : 4
+Width         : 128
+Accuracy      : 9.57%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 0
+Learning Rate : 0.1
+Epochs        : 7
+Batch size    : 32
+Layers        : 3
+Width         : 114
+Accuracy      : 19.16%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 1
+Learning Rate : 0.0325261
+Epochs        : 10
+Batch size    : 52
+Layers        : 3
+Width         : 123
+Accuracy      : 89.35%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 2
+Learning Rate : 0.1
+Epochs        : 10
+Batch size    : 64
+Layers        : 3
+Width         : 43
+Accuracy      : 10.27%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 3
+Learning Rate : 0.0909208
+Epochs        : 10
+Batch size    : 30
+Layers        : 5
+Width         : 128
+Accuracy      : 10.32%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 4
+Learning Rate : 0.0821149
+Epochs        : 10
+Batch size    : 64
+Layers        : 2
+Width         : 128
+Accuracy      : 29.51%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 5
+Learning Rate : 0.074286
+Epochs        : 10
+Batch size    : 38
+Layers        : 4
+Width         : 76
+Accuracy      : 10.1%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 194 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 6
+Learning Rate : 0.0818812
+Epochs        : 10
+Batch size    : 54
+Layers        : 5
+Width         : 128
+Accuracy      : 10.09%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 7
+Learning Rate : 0.0514119
+Epochs        : 7
+Batch size    : 64
+Layers        : 5
+Width         : 128
+Accuracy      : 67.51%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 8
+Learning Rate : 0.0859095
+Epochs        : 7
+Batch size    : 64
+Layers        : 3
+Width         : 85
+Accuracy      : 35.42%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 9
+Learning Rate : 0.1
+Epochs        : 7
+Batch size    : 57
+Layers        : 2
+Width         : 128
+Accuracy      : 30.23%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 10
+Learning Rate : 0.0493848
+Epochs        : 9
+Batch size    : 64
+Layers        : 5
+Width         : 116
+Accuracy      : 15.63%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 11
+Learning Rate : 0.0822505
+Epochs        : 8
+Batch size    : 22
+Layers        : 4
+Width         : 80
+Accuracy      : 11.34%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 12
+Learning Rate : 0.0465656
+Epochs        : 10
+Batch size    : 54
+Layers        : 3
+Width         : 128
+Accuracy      : 56.31%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 13
+Learning Rate : 0.0986002
+Epochs        : 8
+Batch size    : 64
+Layers        : 4
+Width         : 62
+Accuracy      : 10.27%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 4803
+---------------------------------------------------------
+Number of the Iteration : 5
+Number of the parameters : 14
+Learning Rate : 0.0801419
+Epochs        : 8
+Batch size    : 18
+Layers        : 3
+Width         : 128
+Accuracy      : 10.32%
+Current Best Accuracy      : 95.8%
+LR Epochs Batch  Layer Width : 45000 500 3000 200 6000
+---------------------------------------------------------
