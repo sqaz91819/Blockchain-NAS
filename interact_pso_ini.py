@@ -191,8 +191,13 @@ if __name__ == "__main__":
         
         AA = processed_log['args']['A']
         print(AA)
+        tx_hash = None
+        while tx_hash is None:
+            try:
+                tx_hash = hp.functions.Current_ACC().transact()
+            except web3.exceptions.ValueError:
+                pass
 
-        tx_hash = hp.functions.Current_ACC().transact()
         try:
             tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=1200)
         
