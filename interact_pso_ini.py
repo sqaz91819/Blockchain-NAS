@@ -65,7 +65,7 @@ def PSO_random_initial_vector(arr) :
 
 
 if __name__ == "__main__":
-    w3 = Web3(Web3.IPCProvider('./tzuchieh_node1/geth.ipc'))
+    w3 = Web3(Web3.IPCProvider('./node1/geth.ipc'))
     w3.eth.default_account = w3.eth.accounts[0]
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     print('Contract Address : ', addr)
     hp = w3.eth.contract(address=addr, abi=abi)
  
-    while True:
+    while not hp.functions.end_of_contract().call():
         print("Task has not been completed!")
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         tx_hash = hp.functions.get().transact()
