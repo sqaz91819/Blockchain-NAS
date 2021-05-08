@@ -296,7 +296,7 @@ if __name__ == "__main__":
     # print("Repair process end.")
 
     total_t = time() - start_t
-    with open('logging.txt', 'w') as f:
+    with open('pso_logging.txt', 'w') as f:
         f.write(str(total_t) + '\n')
         f.write(str(n_tasks) + '\n')
         f.write(str(training_t) + '\n')
