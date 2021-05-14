@@ -5,10 +5,10 @@ from time import time
 hard code grid of parameters #=8250
 '''
 LR         = [0.01, 0.005, 0.001, 0.0005, 0.0001]
-EPOCHS     = [5,6,7]
-BATCH_SIZE = [16,32,48]
-LAYERS     = [1,2,3]
-WIDTH      = [32,64,96]
+EPOCHS     = [5,8,10]
+BATCH_SIZE = [16,136,256]
+LAYERS     = [1,3,5]
+WIDTH      = [8,68,128]
 # LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
 # EPOCHS     = [5,6,7,8,9,10]
 # BATCH_SIZE = [16,32,64,128,256]
