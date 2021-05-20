@@ -1,14 +1,15 @@
 from trainer import Trainer
 from time import time
+import sys
 
 '''
 hard code grid of parameters #=8250
 '''
 LR         = [0.01, 0.005, 0.001, 0.0005, 0.0001]
-EPOCHS     = [5,6,7]
-BATCH_SIZE = [16,32,48]
-LAYERS     = [1,2,3]
-WIDTH      = [32,64,96]
+EPOCHS     = [5,8,10]
+BATCH_SIZE = [16,136,256]
+LAYERS     = [1,3,5]
+WIDTH      = [8,68,128]
 # LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
 # EPOCHS     = [5,6,7,8,9,10]
 # BATCH_SIZE = [16,32,64,128,256]
@@ -49,6 +50,8 @@ def decoder(counter):
 
 
 if __name__ == "__main__":
+    dataset = sys.argv[1]
+    print('Dataset :', dataset)
     recorder = []
     start_t = time()
     training_t = 0
@@ -61,7 +64,7 @@ if __name__ == "__main__":
         print('Width         : ', width)
         print("----------------------------------------------------------")
         s = time()
-        trainer = Trainer(lr, epochs=epoch, batch_size=batch, n_layers=layer, n_width=width)
+        trainer = Trainer(lr, epochs=epoch, batch_size=batch, n_layers=layer, n_width=width, dataset=dataset)
         acc = trainer.train()
         recorder.append(acc)
         training_t += time() - s
@@ -70,9 +73,9 @@ if __name__ == "__main__":
         print("----------------------------------------------------------")
 
     total_t = time() - start_t
-    with open('centrallogging.txt', 'w') as f:
+    with open(dataset + 'centrallogging.txt', 'w') as f:
         f.write(str(total_t) + '\n')
         f.write(str(training_t) + '\n')
-    with open('central.txt', 'w') as f:
+    with open(dataset + 'central.txt', 'w') as f:
         for r in recorder:
             f.write(str(r) + '\n')

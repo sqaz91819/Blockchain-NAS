@@ -17,16 +17,21 @@ if gpus:
 
 
 class Trainer:
-    def __init__(self, lr, epochs=5, batch_size=32, n_layers=2, n_width=32):
+    def __init__(self, lr, epochs=5, batch_size=32, n_layers=2, n_width=32, dataset='mnist'):
         self.lr = lr
         self.epochs = epochs
         self.batch_size = batch_size
         self.n_layers = n_layers
         self.n_width = n_width
+        self.dataset = dataset
+        if self.dataset == 'mnist':
+            self.shape = 784
+        elif self.dataset == 'cifar10':
+            self.shape = 3072
         self.model = self.build_model()
 
     def build_model(self):
-        inputs = keras.Input(shape=(784,))
+        inputs = keras.Input(shape=(self.shape,))
         x = layers.Dense(self.n_width, activation='relu')(inputs)
         for _ in range(self.n_layers - 1):
             x = layers.Dense(self.n_width, activation='relu')(x)
@@ -39,18 +44,41 @@ class Trainer:
 
         return model
 
-    def train(self):
-        (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
-        x_train = x_train.reshape(60000, 784)
-        x_test = x_test.reshape(10000, 784)
+    def load_data(self):
+        if self.dataset == 'mnist':
+            (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+            x_train = x_train.reshape(60000, 784)
+            x_test = x_test.reshape(10000, 784)
+        elif self.dataset == 'cifar10':
+            (x_train, y_train), (x_test, y_test) = keras.datasets.cifar10.load_data()
+            x_train = x_train.reshape(50000, 3072)
+            x_test = x_test.reshape(10000, 3072)
+
         x_train = x_train.astype('float32')
         x_test = x_test.astype('float32')
         x_train /= 255
         x_test /= 255
-
-        # convert class vectors to binary class matrices
         y_train = keras.utils.to_categorical(y_train, 10)
         y_test = keras.utils.to_categorical(y_test, 10)
+
+        return x_train, y_train, x_test, y_test
+
+
+
+    def train(self):
+        # (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+        # x_train = x_train.reshape(60000, 784)
+        # x_test = x_test.reshape(10000, 784)
+        # x_train = x_train.astype('float32')
+        # x_test = x_test.astype('float32')
+        # x_train /= 255
+        # x_test /= 255
+
+        # convert class vectors to binary class matrices
+        # y_train = keras.utils.to_categorical(y_train, 10)
+        # y_test = keras.utils.to_categorical(y_test, 10)
+
+        x_train, y_train, x_test, y_test = self.load_data()
 
         history = self.model.fit(x_train, y_train,
                     batch_size=self.batch_size,
@@ -64,5 +92,7 @@ class Trainer:
         return int(score[1] * 10000)
 
 if __name__=='__main__':
-    t = Trainer(0.001)
+    t = Trainer(0.001, dataset='cifar10')
     t.train()
+    # (x_train, y_train), (x_test, y_test) = keras.datasets.cifar10.load_data()
+    # print(x_train.reshape(50000, 3072)/255)
