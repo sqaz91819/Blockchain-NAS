@@ -133,3 +133,8 @@ node1/geth/
 node1/geth.ipc
 node1/history
 logging.txt
+cifar*.txt
+*record*.txt
+*.swp
+*.swo
+*logging*.txt
