@@ -1,7 +1,7 @@
+import sys
 import json
 import web3
 from web3 import Web3
-from solc import compile_standard
 from trainer import Trainer
 from time import time
 
@@ -53,6 +53,10 @@ def decoder(counter):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        dataset = sys.argv[1]
+    else:
+        dataset = 'mnist'
     w3 = Web3(Web3.IPCProvider('./node1/geth.ipc'))
     w3.eth.default_account = w3.eth.accounts[0]
     print(w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899'))
@@ -104,7 +108,7 @@ if __name__ == "__main__":
         
         s = time()
         # Training process...
-        trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
+        trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width, dataset=dataset)
         acc = trainer.train()
         training_t += time() - s
 
@@ -154,7 +158,7 @@ if __name__ == "__main__":
 
         s = time()
         # Training process...
-        trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width)
+        trainer = Trainer(lr, epochs=epochs, batch_size=batch_size, n_layers=layers, n_width=width, dataset=dataset)
         acc = trainer.train()
         training_t += time() - s
 
@@ -176,7 +180,7 @@ if __name__ == "__main__":
     print("Repair process end.")
 
     total_t = time() - start_t
-    with open('logging.txt', 'w') as f:
+    with open(dataset + 'logging.txt', 'w') as f:
         f.write(str(total_t) + '\n')
         f.write(str(n_tasks) + '\n')
         f.write(str(training_t) + '\n')
