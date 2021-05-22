@@ -50,7 +50,10 @@ def decoder(counter):
 
 
 if __name__ == "__main__":
-    dataset = sys.argv[1]
+    if len(sys.argv) > 1:
+        dataset = sys.argv[1]
+    else:
+        dataset = ''
     print('Dataset :', dataset)
     recorder = []
     start_t = time()
