@@ -11,8 +11,8 @@ hard code grid of parameters #=8250
 LR         = [0.01, 0.005, 0.001, 0.0005, 0.0001]
 EPOCHS     = [5,8,10]
 BATCH_SIZE = [16,136,256]
-LAYERS     = [1,3,5]
-WIDTH      = [8,68,128]
+LAYERS     = [1,5,9]
+WIDTH      = [16,260,512]
 # LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
 # EPOCHS     = [5,6,7,8,9,10]
 # BATCH_SIZE = [16,32,64,128,256]
@@ -166,7 +166,7 @@ if __name__ == "__main__":
         w3.geth.personal.unlock_account(w3.eth.default_account, 'rx0899')
         try:
             tx_hash = hp.functions.set_accuracy(acc, counter).transact()
-            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=150)
+            tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, timeout=60)
         except web3.exceptions.TimeExhausted:
             print("Timeout occur in accuracy...")
             pass
