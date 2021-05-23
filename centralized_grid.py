@@ -53,7 +53,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         dataset = sys.argv[1]
     else:
-        dataset = ''
+        dataset = 'mnist'
     print('Dataset :', dataset)
     recorder = []
     start_t = time()
