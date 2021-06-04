@@ -25,7 +25,7 @@ Reconstruct blockcain steps:
             geth --datadir node1 init genesis.json/77.json
             all servers close the blockcain node
 
-    step7 : Original server git add account
+    step7 : Original server git add account(maybe can pass this step)
             git commit -m 'new account'
             git push
 
