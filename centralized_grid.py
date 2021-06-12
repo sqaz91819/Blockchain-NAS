@@ -6,10 +6,10 @@ import sys
 hard code grid of parameters #=8250
 '''
 LR         = [0.01, 0.005, 0.001, 0.0005, 0.0001]
-EPOCHS     = [5,8,10]
-BATCH_SIZE = [16,136,256]
-LAYERS     = [1,5,9]
-WIDTH      = [16,264,512]
+EPOCHS     = [10]
+BATCH_SIZE = [16,96,176,256]
+LAYERS     = [1,3,5,7,9]
+WIDTH      = [16,181,346,512]
 # LR         = [0.5, 0.025, 0.01, 0.0075, 0.005, 0.0025, 0.001, 0.00075, 0.0005, 0.00025, 0.0001]
 # EPOCHS     = [5,6,7,8,9,10]
 # BATCH_SIZE = [16,32,64,128,256]
@@ -58,7 +58,8 @@ if __name__ == "__main__":
     recorder = []
     start_t = time()
     training_t = 0
-    for i in range(405):
+    length = len(LR) * len(EPOCHS) * len(BATCH_SIZE) * len(LAYERS) * len(WIDTH)
+    for i in range(length):
         lr, epoch, batch, layer, width = decoder(i)
         print('Learning Rate : ', lr)
         print('Epochs        : ', epoch)
