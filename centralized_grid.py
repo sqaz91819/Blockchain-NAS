@@ -61,6 +61,7 @@ if __name__ == "__main__":
     length = len(LR) * len(EPOCHS) * len(BATCH_SIZE) * len(LAYERS) * len(WIDTH)
     for i in range(length):
         lr, epoch, batch, layer, width = decoder(i)
+        print('Number        : ', i+1)
         print('Learning Rate : ', lr)
         print('Epochs        : ', epoch)
         print('Batch size    : ', batch)
