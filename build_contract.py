@@ -14,9 +14,9 @@ if __name__ == "__main__":
                     contract HyperParameter_LR {
 
                     uint min = 0;
-                    uint max = 405;
+                    uint max = 400;
                     uint counter = 0;
-                    uint[406] acc;
+                    uint[401] acc;
 
                     event parameter_log(uint counter);
 
