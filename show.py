@@ -65,7 +65,7 @@ if __name__ == "__main__":
     print('Contract Address : ', addr)
 
     hp = w3.eth.contract(address=addr, abi=abi)
-    results = [hp.functions.get_acc(i).call() for i in range(405)]
+    results = [hp.functions.get_acc(i).call() for i in range(400)]
 
 
     print(results)
